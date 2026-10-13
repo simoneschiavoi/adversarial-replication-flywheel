@@ -64,8 +64,8 @@ _duel_txt = (f"{abs(_duel):.4f}" if _duel < 0 else f"+{_duel:.4f}")
 _cost_txt = (f"{(1 - _ctl_promo['cost_ratio']) * 100:.0f}% lower val cost"
              if _ctl_promo else 'lower val cost')
 _hold_cost_txt = (f"holdout wall-time equal or better: "
-                  f"{HO['results']['control_final']['wall_min']:.1f} vs "
-                  f"{HO['results']['baseline_r0']['wall_min']:.1f} min")
+                  f"{HO['results']['flywheel_final']['wall_min']:.1f} vs "
+                  f"{HO['results']['control_final']['wall_min']:.1f} min")
 _val_cost_txt = (f"{_ctl_promo['cost_ratio'] * SUMMARY['baseline']['cost_min']:.1f} "
                  f"vs {SUMMARY['baseline']['cost_min']:.1f} min on validation "
                  f"({_cost_txt})" if _ctl_promo else '')
@@ -487,7 +487,7 @@ story.append(KeepTogether([
         'validation-candidate points and holdout finals sit on different '
         'suites and are read separately. Both holdout finals dominate the '
         'baseline replicate (higher XEB at equal-or-better wall time); '
-        'the flywheel final (blue) tops the plot, '
+        'the flywheel final (blue) tops the holdout finals, '
         f'{_duel_txt} above the control final (orange diamond) — a '
         'CI-includes-0 difference, read as parity, not superiority.', S['caption']),
 ]))
@@ -496,8 +496,8 @@ story.append(KeepTogether([
     Paragraph(
         'Fig. 3 — χ telemetry at baseline: hard circuits (dashed) are '
         'χ-starved — low bond dimension destroys them; easy circuits '
-        '(dotted) are not. This is the mechanism behind both the r1 control '
-        'promotion (shifting χ budget to hard circuits) and the '
+        '(dotted) are not. This is the mechanism behind the r1 promotions '
+        'in both arms (shifting χ budget to hard circuits) and the '
         'permutation crashes: a permuted layout changes which circuits are '
         'hard.', S['caption']),
 ]))
@@ -547,8 +547,11 @@ for lead, text in [
 
 story.extend(h2('Known limitations'))
 for _lim in [
-    'Splits are not depth-stratified: the holdout has 4× depth-4 circuits, '
-    'val none, so the ≈0.026 val→holdout gap partly reflects composition.',
+    # gap rendered from the data (baseline val mean − holdout r0 mean) —
+    # a hardcoded figure here went stale on the personal-account rerun
+    f'Splits are not depth-stratified: the holdout has 4× depth-4 circuits, '
+    f'val none, so the ≈{SUMMARY["baseline"]["mean_xeb_val"] - HO["results"]["baseline_r0"]["mean_xeb_holdout"]:.3f} '
+    f'val→holdout gap partly reflects composition.',
     'The cost gate is a point-ratio screen on noisy wall-times from a '
     'single device class (mps.cpu).',
     'Shot presets assumed 6 easy / 6 hard circuits; the suite manifest is '
@@ -593,8 +596,8 @@ art = [
     [TD('campaign report + figures + claims ledger', True),
      TD('runs/report/ (report.md, claims.json, staircase.png, pareto.png, '
         'chi_sweep.png)', True)],
-    [TD('per-round immutable metrics', True),
-     TD('runs/flywheel/<run>/metrics.json + ledger/jobs.sqlite '
+    [TD('per-round outcomes', True),
+     TD('runs/report/rounds.json + ledger/jobs.sqlite '
         f"({SUMMARY['ledger']['jobs_total']} jobs)", True)],
     [TD('preregistered gate + frozen prediction', True),
      TD('researcher/PREDICTIONS.jsonl (frozen at G3, scored once at G6)',

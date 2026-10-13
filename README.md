@@ -78,9 +78,10 @@ stripped-manifest content-sha gate). Over 10 preregistered rounds per arm,
   unlocked — and the omission is disclosed here and in the appendix
   instead of being patched in silence.
 - **Replication deltas vs the original TEST run** (same suite sha, same
-  seeds, baseline identical at 0.950381 on val): TEST showed 0/10 flywheel
-  promotions and a missed prediction; this run promoted 1/1 per arm and
-  hit the band — the r1 flywheel CI shifted just past zero. Both runs are
+  seeds; baseline val 0.950381 vs TEST 0.953184 — run-to-run sampling
+  noise, well inside ±min_delta): TEST showed 0/10 flywheel promotions
+  and a missed prediction; this run promoted 1/10 per arm and hit the
+  band — the r1 flywheel CI shifted just past zero. Both runs are
   reported; neither is cherry-picked.
 
 ## Results — original TEST-account campaign (closed 2026-10-07; kept as history)
