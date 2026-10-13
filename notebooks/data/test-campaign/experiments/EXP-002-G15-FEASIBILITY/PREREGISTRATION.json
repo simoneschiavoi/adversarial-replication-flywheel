@@ -1,0 +1,10 @@
+{
+  "exp_id": "EXP-002-G15-FEASIBILITY",
+  "hypothesis": "At least one 30–56q peaked-circuit attack job completes within 5 wall minutes on mps.cpu, and MPS sampling shows nonzero peak-proximity lift at some chi.",
+  "envelope_minutes": 5.0,
+  "chi_grid": [16, 64, 256],
+  "shots": 20000,
+  "difficulties_probed": [1, 3, 5, 7, 9, 10],
+  "decision_rule": "no job <=5min -> shrink before freeze; no PPL gradient -> primary metric switches to exact-truth lane (documented before round 1)",
+  "usd_planned": 0.0
+}

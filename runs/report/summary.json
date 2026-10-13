@@ -1,0 +1,94 @@
+{
+ "generated_at": "2026-10-13T05:36:03+00:00",
+ "suite_sha256": "2e583cf82eaf70e9825e891412de1ec26d281615dc083ce289c0a1d8725923b1",
+ "rounds_per_arm": {
+  "flywheel": 10,
+  "control": 10
+ },
+ "promotions": {
+  "flywheel": 1,
+  "control": 1
+ },
+ "baseline": {
+  "mean_xeb_val": 0.950381,
+  "cost_min": 33.6904
+ },
+ "min_delta": 0.02543671062687061,
+ "noise_sd_paired": 0.012718355313435304,
+ "best_flywheel": {
+  "round": 1,
+  "family": "chi_alloc",
+  "value": "easy32hard128",
+  "mean_delta": 0.03799941666666665,
+  "ci": [
+   0.0024347708333333075,
+   0.0799551833333333
+  ],
+  "accepted": true
+ },
+ "prediction": {
+  "campaign": "flywheel-test",
+  "metric": "final_incumbent_holdout_mean_xeb",
+  "point": 0.975191,
+  "band": [
+   0.950381,
+   0.999
+  ],
+  "frozen_at": "2026-10-11T19:33:14+00:00",
+  "actual": 0.976113,
+  "scored": true,
+  "scored_at": "2026-10-12T15:25:59+00:00",
+  "in_band": true
+ },
+ "holdout": {
+  "n_holdout": 12,
+  "results": {
+   "flywheel_final": {
+    "mean_xeb_holdout": 0.9761134166666667,
+    "wall_min": 29.3263
+   },
+   "baseline_r0": {
+    "mean_xeb_holdout": 0.9265211666666667,
+    "wall_min": 29.734099999999998
+   },
+   "control_final": {
+    "mean_xeb_holdout": 0.9744095833333333,
+    "wall_min": 29.622400000000003
+   }
+  },
+  "paired": {
+   "control_vs_r0": {
+    "delta": 0.047888416666666656,
+    "ci": [
+     0.010019775000000002,
+     0.08862941874999994
+    ]
+   },
+   "flywheel_vs_r0": {
+    "delta": 0.049592250000000004,
+    "ci": [
+     0.013749454166666713,
+     0.08890311458333328
+    ]
+   },
+   "flywheel_vs_control": {
+    "delta": 0.0017038333333333489,
+    "ci": [
+     -0.005802352083333317,
+     0.009789735416666695
+    ]
+   }
+  }
+ },
+ "claims": {
+  "n_claims": 31,
+  "n_job_refs": 432,
+  "n_distinct_jobs": 336
+ },
+ "ledger": {
+  "jobs_total": 865,
+  "devices": [
+   "mps.cpu"
+  ]
+ }
+}

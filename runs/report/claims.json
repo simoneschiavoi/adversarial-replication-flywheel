@@ -1,0 +1,839 @@
+[
+  {
+    "generated_at": "2026-10-13T05:36:03+00:00",
+    "suite_sha256": "2e583cf82eaf70e9825e891412de1ec26d281615dc083ce289c0a1d8725923b1"
+  },
+  {
+    "claim": "Baseline (r0) mean val normalized XEB",
+    "value": 0.950381,
+    "evidence": {
+      "run": "runs/flywheel/20261011T193314Z_g3",
+      "job_ids": [
+        "mqbksonBQvUupklZ",
+        "MP1uFdDAIt6szV4z",
+        "2NIcKGkdWMyXf8j5",
+        "dh5G1w4fEkB8X1Y0",
+        "JIWapoWQCfAs1AqU",
+        "TTIK7LnY2fACLSzw",
+        "aVP7dfhsC8klSWmz",
+        "XN4rqndqaVOaNFhB",
+        "s9qP4jD1x78bstYB",
+        "xWzHe9N9THikNkt5",
+        "KqBas6jTBde8bFho",
+        "TmqvCVyLDbaYwWvp"
+      ]
+    }
+  },
+  {
+    "claim": "Run-to-run noise sd of paired val XEB (two identical passes)",
+    "value": 0.012718355313435304,
+    "evidence": {
+      "run": "runs/flywheel/20261011T193314Z_g3",
+      "job_ids": [
+        "mqbksonBQvUupklZ",
+        "MP1uFdDAIt6szV4z",
+        "2NIcKGkdWMyXf8j5",
+        "dh5G1w4fEkB8X1Y0",
+        "JIWapoWQCfAs1AqU",
+        "TTIK7LnY2fACLSzw",
+        "aVP7dfhsC8klSWmz",
+        "XN4rqndqaVOaNFhB",
+        "s9qP4jD1x78bstYB",
+        "xWzHe9N9THikNkt5",
+        "KqBas6jTBde8bFho",
+        "TmqvCVyLDbaYwWvp",
+        "DAYUWi1CxGSSOTLK",
+        "5dpbWZpeYnZd18uF",
+        "Z9ovteKmc4Ds4PmE",
+        "1claaNtFfNvaYIrF",
+        "H4ZlaGL8ICNeVb2k",
+        "fa86zgyrqEk0Uq8A",
+        "UcN1jIodKYhW4bxH",
+        "Qp28gRtty3CNkKyP",
+        "wx6tZNfozx81qFZ7",
+        "iD9Kacfn6rHKlGir",
+        "ny8QZIbKbmyLZ6pI",
+        "aA0AWAZP9i1YOpSN"
+      ]
+    }
+  },
+  {
+    "claim": "Promotion threshold min_delta",
+    "value": 0.02543671062687061,
+    "evidence": {
+      "formula": "max(2.0*sd_paired, 0.005)"
+    }
+  },
+  {
+    "claim": "chi gradient on val: mean XEB at chi=32 vs chi=256",
+    "value": [
+      0.8811185,
+      1.0018705833333332
+    ],
+    "evidence": {
+      "run": "runs/flywheel/20261011T193314Z_g3",
+      "job_ids": [
+        "FyteyVfIAjM3Te9z",
+        "No5bQqIPCPBbt0Sv",
+        "PJswtYfiPB1Gy7bd",
+        "arY1kpbJNpWjFWD2",
+        "FtTC7sfKSMH3mETP",
+        "YvF1CQ2rmHUNm8NA",
+        "Tu1ehAutdm5sb88D",
+        "UqhsFgLKBoVNCdYO",
+        "H83Dc4u30lYx06Sk",
+        "masozNXFigwlP1GM",
+        "OL4TG5kfDPDKosnV",
+        "vvBENzjIOLHI6QIV",
+        "mqbksonBQvUupklZ",
+        "MP1uFdDAIt6szV4z",
+        "2NIcKGkdWMyXf8j5",
+        "dh5G1w4fEkB8X1Y0",
+        "JIWapoWQCfAs1AqU",
+        "TTIK7LnY2fACLSzw",
+        "aVP7dfhsC8klSWmz",
+        "XN4rqndqaVOaNFhB",
+        "s9qP4jD1x78bstYB",
+        "xWzHe9N9THikNkt5",
+        "KqBas6jTBde8bFho",
+        "TmqvCVyLDbaYwWvp",
+        "WC4TU9uNSLUNa8Qq",
+        "IoqmEfD31FU6vQm2",
+        "MpU29gbcAWbeO3ya",
+        "IFRLTCSDgyoffZHP",
+        "Rod6Q0V7cD3Nzz2L",
+        "f48xtSgSiHpeiGV1",
+        "nOOzm5yI6zxzuciK",
+        "ql1SOOX7EWvL6Ckw",
+        "fvaJHd12OwNdaxpP",
+        "ldJBjzPq0IZVZgRl",
+        "U2epJiCYfh1LKNjW",
+        "89RZ05JknwrevgtE",
+        "ESoVPJoBpk9g3NyN",
+        "qNpbFPK67qf5EODU",
+        "cs9xjSO9r37mZNMz",
+        "b49TvajLU4QEPC8H",
+        "w7zyBUwmBTgI3uxd",
+        "9C3VrDHIiHClvoMN",
+        "6kv4kCx0XHZmG9S2",
+        "2kXPU14fnCJIAezB",
+        "nwOKqe4mWvZQh88A",
+        "PHw3WIQzafYIB58U",
+        "8hsonC6xgkNYmuXA",
+        "oEuvfRJ16RpKyNjL"
+      ]
+    }
+  },
+  {
+    "claim": "flywheel r1 (chi_alloc=easy32hard128) paired mean val delta",
+    "value": 0.03799941666666665,
+    "evidence": {
+      "run": "runs/flywheel/20261011T202430Z_r1",
+      "ci": [
+        0.0024347708333333075,
+        0.0799551833333333
+      ],
+      "accepted": true,
+      "job_ids": [
+        "2jfRhwIK5hOKja8F",
+        "lktRom4tn7TKHWYy",
+        "bJoEuWzd5HFUfH52",
+        "6USA4wBtRtiIukkf",
+        "qnAAMOYrAXdlkc5r",
+        "8RV8BLhbixrmsLHD",
+        "sUSFltBT4mEoY9rs",
+        "aiGz7mTgBYp1zKdF",
+        "WW3bsJ21a3lOQwuc",
+        "lIYXxZpvWe25Xf59",
+        "cgYsBNU7TOx16eLZ",
+        "w1K7KhP072XzcbCh"
+      ]
+    }
+  },
+  {
+    "claim": "control r1 (chi_alloc=easy32hard128) paired mean val delta",
+    "value": 0.03352458333333335,
+    "evidence": {
+      "run": "runs/flywheel/20261011T211149Z_r1_control",
+      "ci": [
+        0.0011606375000000173,
+        0.06997342083333329
+      ],
+      "accepted": true,
+      "job_ids": [
+        "BSER6db0P3Y9Ohxw",
+        "dwQB0iGPiVEOpgXT",
+        "xJf5JEoHONx0SasL",
+        "FNCCdVGynDbjtztl",
+        "eIfAch6Bj00Ub3of",
+        "Yoi28F29Hz6CN4uV",
+        "YggxZGRIwMXGsswg",
+        "xZoA9LOKRGVbSHz5",
+        "m58200hOTfVJXrgB",
+        "NYmcNBNJApt6BzDH",
+        "TIxGGGxL5YG1dLVx",
+        "FQlwvtrqiHnfWZ6T"
+      ]
+    }
+  },
+  {
+    "claim": "flywheel r2 (chi_alloc=uniform128) paired mean val delta",
+    "value": -0.0045636666666666326,
+    "evidence": {
+      "run": "runs/flywheel/20261011T220235Z_r2",
+      "ci": [
+        -0.014581335416666633,
+        0.006389197916666672
+      ],
+      "accepted": false,
+      "job_ids": [
+        "aAwNHHyih8mccjLB",
+        "MlPLeL8mJLhKU1GI",
+        "ZF6rGDYJEiTOyHY0",
+        "yYxjEHDLDpSTVBLr",
+        "wZM6KXpNrXjX5mzA",
+        "STCiyPYtJEaTTQg5",
+        "QURgYU78iq7w4Yj9",
+        "NfcjR7OATxcm1oHW",
+        "CxCYQ2MhbyeJL0VQ",
+        "MiHfKengaBbC09bE",
+        "JghkSZ7Jki5hQY0h",
+        "qlBPmijjP3V7hWRa"
+      ]
+    }
+  },
+  {
+    "claim": "control r2 (chi_alloc=uniform128) paired mean val delta",
+    "value": 0.0031182499999999704,
+    "evidence": {
+      "run": "runs/flywheel/20261011T225314Z_r2_control",
+      "ci": [
+        -0.008444972916666698,
+        0.013842368749999993
+      ],
+      "accepted": false,
+      "job_ids": [
+        "jzBl3FVlhEjQ4rTm",
+        "vYr7s3YJZ9Sev6j8",
+        "SGcpWSChct2pku4A",
+        "knBSWVdR6sxIjTZZ",
+        "OSIeRKcKorklqBb4",
+        "1fX87HHxlJGc8bvP",
+        "4xPelYNA30J2KZlJ",
+        "rrGPczaruXih3Zy8",
+        "gZQ1WEPOA2trgOVJ",
+        "EEwe7qhYQ0AAQWm3",
+        "0ANvsNmU9BuLyrBJ",
+        "4rufioRMj6my2hDY"
+      ]
+    }
+  },
+  {
+    "claim": "flywheel r3 (chi_alloc=easy32hard256) paired mean val delta",
+    "value": 0.009935250000000026,
+    "evidence": {
+      "run": "runs/flywheel/20261011T234221Z_r3",
+      "ci": [
+        -0.0028059854166666664,
+        0.023210004166666662
+      ],
+      "accepted": false,
+      "job_ids": [
+        "7TsCj7TVvt8GrLv7",
+        "2nmjG1Res2Ffa0Qv",
+        "2BqNJ6VzbGRllETy",
+        "jubBjOM4MElbUvpQ",
+        "5XDJQZYQ90WMpzMg",
+        "57yQFeoPtCMVxm3T",
+        "mG8Nux6dvi6uk1Id",
+        "9JjwqbVvyBeMLYDc",
+        "z6rjfc9gVaC9n6TT",
+        "qO0brFoa4y4tFeHL",
+        "JWTOENfrL8XneUCW",
+        "kToOt1Z2IDbfNavY"
+      ]
+    }
+  },
+  {
+    "claim": "control r3 (chi_alloc=easy32hard256) paired mean val delta",
+    "value": 0.019111916666666656,
+    "evidence": {
+      "run": "runs/flywheel/20261012T003208Z_r3_control",
+      "ci": [
+        0.004134647916666632,
+        0.03419154583333332
+      ],
+      "accepted": false,
+      "job_ids": [
+        "KkPvoqAnAEILCWYP",
+        "ryI0nDEOWM0KncM1",
+        "3ZalgTX3REzYZ4Lt",
+        "kVhEiyPLOnduaSgN",
+        "3nIXTJ3GoOSht5Pw",
+        "Lj1EOiCAAM3wnJGQ",
+        "L8a4os0Hbgl3vr3r",
+        "a4BByDtwQFkPMG1x",
+        "yZSg7cJO19mbDIhr",
+        "tQqSIymQIlXK5rq9",
+        "DvKrDKDECKiL4h6f",
+        "Ba87J3xFe6ZFxaXD"
+      ]
+    }
+  },
+  {
+    "claim": "flywheel r4 (chi_alloc=uniform256) paired mean val delta",
+    "value": 0.006328333333333334,
+    "evidence": {
+      "run": "runs/flywheel/20261012T012604Z_r4",
+      "ci": [
+        -0.00579121666666668,
+        0.019539124999999973
+      ],
+      "accepted": false,
+      "job_ids": [
+        "qCyW68K8NVFH2nTQ",
+        "46e08LMBHSPyjJ8M",
+        "pzeifFp9DTzmI6xz",
+        "EcI2H2Pe3j01KPPX",
+        "7ORWK5HgKmh1epM3",
+        "4cMlVLOCkMoLIORk",
+        "8sTJvvci1Vz8Z1KA",
+        "e6jBEyMc7RytG8d0",
+        "8gBcHbRjhMComray",
+        "zh44gnW9iwC1hVY2",
+        "NGiKpAPC1dFNyDO7",
+        "nXqBY2Iij0kFcl5x"
+      ]
+    }
+  },
+  {
+    "claim": "control r4 (chi_alloc=uniform256) paired mean val delta",
+    "value": 0.010743249999999982,
+    "evidence": {
+      "run": "runs/flywheel/20261012T022001Z_r4_control",
+      "ci": [
+        -0.0034314270833333957,
+        0.02541942499999998
+      ],
+      "accepted": false,
+      "job_ids": [
+        "64PWIzBXxbP559qs",
+        "7Hu50sKlSDiUNLPP",
+        "xPAa1eFqhMthOl3q",
+        "KHF9TVYdU0bhRppx",
+        "8VJ0eu9wnigvnXZ9",
+        "ByeWq3yPYS3wIaUT",
+        "hIXrUVLopkdWOaQp",
+        "NlrdzcrwlVpEaWTg",
+        "2oV3XrXU3CJifIn0",
+        "LwhxhfPlHc4VBbzm",
+        "rVLo4I74ITdoDFyd",
+        "7nYkbVblLvfiepVk"
+      ]
+    }
+  },
+  {
+    "claim": "flywheel r5 (permutation=11) paired mean val delta",
+    "value": -0.5372911666666667,
+    "evidence": {
+      "run": "runs/flywheel/20261012T031548Z_r5",
+      "ci": [
+        -0.6842335645833334,
+        -0.35684791458333354
+      ],
+      "accepted": false,
+      "job_ids": [
+        "DYgJG7JSnoMbZLTp",
+        "QnCmHvFL1KAlehST",
+        "FvSPNnbCyDHQNCq3",
+        "l15VSdznIDJHPJQd",
+        "W2SPSgQaBVILADup",
+        "kurlzCWQ4vzEcCgc",
+        "VWFNmYJFEOzPXVXe",
+        "K48w3U7YviTRv54S",
+        "ItuyqXGib9maeZIe",
+        "00YL0Gux97OgZ118",
+        "PIRrzpw03808QKgX",
+        "wK2u2sPiFiQdfSlr"
+      ]
+    }
+  },
+  {
+    "claim": "control r5 (chi_alloc=easy16hard128) paired mean val delta",
+    "value": -0.006099833333333342,
+    "evidence": {
+      "run": "runs/flywheel/20261012T040348Z_r5_control",
+      "ci": [
+        -0.021045497916666704,
+        0.008144791666666677
+      ],
+      "accepted": false,
+      "job_ids": [
+        "K67bke7KNP8jeIbs",
+        "eNi65RZ3oSdpiY2J",
+        "nuUSFjfsjcqtQfBw",
+        "2RS44OoD193vKdDA",
+        "fUDt2owo5aDJqbK8",
+        "p30fHPpXs8wt19mR",
+        "zHoVajrgDW9UjnOg",
+        "XfRRbRpIP3qSa6aG",
+        "Bok68Dzhlgy3PZYq",
+        "WwvFzBhmQHDSKP63",
+        "jGqyMO6o0CFVXNtL",
+        "6S3yV7ivBpgFBVlO"
+      ]
+    }
+  },
+  {
+    "claim": "flywheel r6 (permutation=23) paired mean val delta",
+    "value": -0.5773898333333333,
+    "evidence": {
+      "run": "runs/flywheel/20261012T045914Z_r6",
+      "ci": [
+        -0.6991367020833333,
+        -0.4473690333333334
+      ],
+      "accepted": false,
+      "job_ids": [
+        "PYyjRnG9fkC7QeiE",
+        "UQDseS7qldWvNyfo",
+        "2tJsb1OAqFHS5pJY",
+        "hQlqQhJLI5ecIToV",
+        "fRDew3sLlGQD0PNg",
+        "87uGNj7SGaGQ0dOP",
+        "z4hEwyyMkRJtbVOR",
+        "zyhowY1OIPXbz649",
+        "HktcloC5JTdPwfHS",
+        "5EuBY3WgfW6P1r24",
+        "4CVuO2seagcda3Vy",
+        "MqwqDG3sJ06or801"
+      ]
+    }
+  },
+  {
+    "claim": "control r6 (chi_alloc=uniform32) paired mean val delta",
+    "value": -0.1116659166666667,
+    "evidence": {
+      "run": "runs/flywheel/20261012T053842Z_r6_control",
+      "ci": [
+        -0.20533683125000005,
+        -0.029469868750000013
+      ],
+      "accepted": false,
+      "job_ids": [
+        "KVCnMuuwTrtJaCuv",
+        "KL2i43g7wLkxgMiH",
+        "x9DJwOQiS7uNq2ch",
+        "sayLXLpCR8DMrDoo",
+        "wNSYNGhpazYyKM2i",
+        "j5PxsJyjDqZINaQ5",
+        "iHliJpP6MUzu80aA",
+        "haRzYw7mNdL81opg",
+        "uhN4pNmXLxck3EBE",
+        "rF2Hfamj2joucaPk",
+        "lFn9N1KqNbDXO7bd",
+        "zOnjZxDQkChpXXO8"
+      ]
+    }
+  },
+  {
+    "claim": "flywheel r7 (permutation=37) paired mean val delta",
+    "value": -0.5919180833333334,
+    "evidence": {
+      "run": "runs/flywheel/20261012T065116Z_r7",
+      "ci": [
+        -0.6988277354166667,
+        -0.47638739791666673
+      ],
+      "accepted": false,
+      "job_ids": [
+        "8jwc0FngNHbKhR2o",
+        "KrniMAhQyxGvcWGD",
+        "sGnTJ4n3HATmDkGM",
+        "0A3bqyGYd9OdjHXJ",
+        "mIRBsBGIZmrQHv2s",
+        "5UKxbe8hxmcTn8k1",
+        "SuravYzGAhu6jYwV",
+        "p3LcVcCq9u3V4d0e",
+        "eTVBpv3qoszFVyoZ",
+        "PQPM87JzozzfrrNe",
+        "iTkduxRULF3ZDpJJ",
+        "7DCVX66dRPJvbxHF"
+      ]
+    }
+  },
+  {
+    "claim": "control r7 (permutation=11) paired mean val delta",
+    "value": -0.53230575,
+    "evidence": {
+      "run": "runs/flywheel/20261012T074733Z_r7_control",
+      "ci": [
+        -0.6753320583333334,
+        -0.35296820833333337
+      ],
+      "accepted": false,
+      "job_ids": [
+        "gbW7hPQ9OdECkRB5",
+        "pTt9VQ2b7ulV5DbZ",
+        "P3hHoKUvJmpsLQ90",
+        "Urx4jLh2r3Jcjk10",
+        "F0I9vHC5TzzX44AO",
+        "8qm6JqxKcJqNKquO",
+        "IjceeCc7BOw0u4A9",
+        "mCRWOagmCWd1LWM9",
+        "3ndY8N5nsalC9IfK",
+        "jHBQBwBG8hUJSUg3",
+        "UMfHxSHXhj76fify",
+        "HiguDpl3e5ZBsDpD"
+      ]
+    }
+  },
+  {
+    "claim": "flywheel r8 (shots_alloc=easy10khard30k) paired mean val delta",
+    "value": -0.003679749999999963,
+    "evidence": {
+      "run": "runs/flywheel/20261012T084606Z_r8",
+      "ci": [
+        -0.01879735833333328,
+        0.01178845833333342
+      ],
+      "accepted": false,
+      "job_ids": [
+        "DSHIZZfyfVd3r3vU",
+        "s5Li6FzoQ0G03vD7",
+        "WWo1xfYqpjxzqcGY",
+        "QxVsByo4zyuInaoO",
+        "4E2iXmeyO1Q4KtgS",
+        "3xWb4PEin1LjBTWk",
+        "w3GfgSope9yoObhx",
+        "AnTTKgisPOnvzbJY",
+        "wUBu1WTkt4VUTAqu",
+        "cLnlt4kaLUz8M1dY",
+        "Z9DrlLLw09xYZpNo",
+        "6O0wBrMNOHqNFeUq"
+      ]
+    }
+  },
+  {
+    "claim": "control r8 (permutation=23) paired mean val delta",
+    "value": -0.5665920833333333,
+    "evidence": {
+      "run": "runs/flywheel/20261012T094147Z_r8_control",
+      "ci": [
+        -0.68559446875,
+        -0.4388904125
+      ],
+      "accepted": false,
+      "job_ids": [
+        "t6jLFHwp1Q7tr2GJ",
+        "Cdb1kNoClqphu9Rv",
+        "Bq0hxW9j1jTtpqJU",
+        "tFFJeedaldxxubl9",
+        "fewK16Bm3fYrZIMp",
+        "P8oOm8KKzLO3GmNu",
+        "D4PqXbeZ6CymkuL3",
+        "9TihOvHgP2AoZjSH",
+        "LmPVXvizpcBmlgVQ",
+        "HbhskgVgJ3Jj4Cov",
+        "EqXmrPSH5yrsFN59",
+        "AIwxdLyeeh5ARd8M"
+      ]
+    }
+  },
+  {
+    "claim": "flywheel r9 (shots_alloc=easy4khard36k) paired mean val delta",
+    "value": -0.006805083333333323,
+    "evidence": {
+      "run": "runs/flywheel/20261012T104220Z_r9",
+      "ci": [
+        -0.01748249374999999,
+        0.0037372041666666918
+      ],
+      "accepted": false,
+      "job_ids": [
+        "FsAAdC5wphy5m8wI",
+        "vV4ZIFp1Qxr8QJp3",
+        "iiTYawHMtksc07LB",
+        "5LL0APkf49633tMe",
+        "KWnZex5gJrJyBHlt",
+        "td5iCaOOAouV1BRr",
+        "M8IbvFanm8VmruP2",
+        "7O8ZrcyqErk52n8f",
+        "2YzYgUCVHR3trR3L",
+        "ffuB4sUWrHn0cOWp",
+        "Zg7WsKa3omgydWi9",
+        "al0NvSwTci4Krt6h"
+      ]
+    }
+  },
+  {
+    "claim": "control r9 (permutation=37) paired mean val delta",
+    "value": -0.5882289166666667,
+    "evidence": {
+      "run": "runs/flywheel/20261012T113759Z_r9_control",
+      "ci": [
+        -0.6919742604166668,
+        -0.47537528333333334
+      ],
+      "accepted": false,
+      "job_ids": [
+        "vh8J3F2ilnc6juIR",
+        "hC4CMunt5dTRjpzE",
+        "p1McNP1EbNym88Nv",
+        "NE0r0boGt7Xl3go8",
+        "QZMPl7PnGxnkeAzn",
+        "mFCC7LY9EwVp3G9a",
+        "1mv7aA7dtVyHlfTW",
+        "2BNsCdzpvBkXGCYX",
+        "y3Xr08uw3YAlN0Uk",
+        "njkJbebshdGRbe8F",
+        "wj35NkYmLQIj24Vd",
+        "XFuItCaSwlA4TdM8"
+      ]
+    }
+  },
+  {
+    "claim": "flywheel r10 (permutation=211) paired mean val delta",
+    "value": -0.5150209166666667,
+    "evidence": {
+      "run": "runs/flywheel/20261012T123446Z_r10",
+      "ci": [
+        -0.6507957666666666,
+        -0.36210775208333335
+      ],
+      "accepted": false,
+      "job_ids": [
+        "YDoNefI0MUj2L0Kv",
+        "Jlx3Ct2mmByUIE4G",
+        "ya9fxMjqdhhiguoE",
+        "p9kAYCVOhYV6FUVJ",
+        "G7fS4kmBCZWoZaur",
+        "FLmkrj2p9Ft1P2bx",
+        "jjQ6cym8uBomgCZn",
+        "1NwdMh0Sfk4FBJN2",
+        "02cQLy1AAllJ4yis",
+        "DAcSCNhhJxrLpXFU",
+        "YiLan7F5eIb0rlFJ",
+        "VrkwuKPRWbw9JAHV"
+      ]
+    }
+  },
+  {
+    "claim": "control r10 (permutation=51) paired mean val delta",
+    "value": -0.46231925,
+    "evidence": {
+      "run": "runs/flywheel/20261012T132720Z_r10_control",
+      "ci": [
+        -0.61072283125,
+        -0.3038304229166668
+      ],
+      "accepted": false,
+      "job_ids": [
+        "gctw7C9ovpqUnm1G",
+        "Yib6LcfpERITq7lX",
+        "FsBM6joQBWBwbFwi",
+        "yLFiFtOeFvXzFujh",
+        "HFpp9d6UkLtUOftR",
+        "WHsA3fDLPcGxIgS0",
+        "izNRnedf0yluCWmL",
+        "T6Y60EqcbYHtXm3e",
+        "IBP2akv4Clb8UoKj",
+        "c8kuzdkuuFMqcMAf",
+        "rt9wM84ewsSL34W3",
+        "xuNGNRy0mCr4u2TG"
+      ]
+    }
+  },
+  {
+    "claim": "Flywheel final holdout mean XEB",
+    "value": 0.9761134166666667,
+    "evidence": {
+      "run": "runs/20261012T135508Z_holdout",
+      "job_ids": [
+        "htVpRFFNB7od6eKP",
+        "Nw9VEiHwMzQg1zm2",
+        "SZPxw0G8FIS8qvNF",
+        "d8AjpgQ6yI57wJhp",
+        "j11tNtUxT4pauMnX",
+        "qdPJmWqhAFk5rd19",
+        "zm1S3y5MD1Gtt9hP",
+        "eFa58knXtlrvdMC3",
+        "nNxllWH9B7Jl7RAd",
+        "5I5p1DkLgC7gFrAL",
+        "MvU8PIQIVun0axpy",
+        "ZYRwhEpBr1Y1fw3o"
+      ]
+    }
+  },
+  {
+    "claim": "Baseline r0 holdout mean XEB",
+    "value": 0.9265211666666667,
+    "evidence": {
+      "run": "runs/20261012T135508Z_holdout",
+      "job_ids": [
+        "Nj2tIRCzLp0sE8Lz",
+        "j49bcXdfOUGZ12KZ",
+        "m1IxuCoucmxLAWvp",
+        "RcwfhxzXAITnpOE7",
+        "mKZuTcyOX4tIG9ed",
+        "Ltm61NB37KqAJZeA",
+        "GmlFpjV3s5fCBaYe",
+        "aD2dFODlF7HpAQJ2",
+        "SljrAmL6zmhLjqxR",
+        "25iafV7ibSAnY21Q",
+        "sFWsXY2q0XsdYkcG",
+        "1Zh1H6wJJ23o3WHW"
+      ]
+    }
+  },
+  {
+    "claim": "Control final holdout mean XEB",
+    "value": 0.9744095833333333,
+    "evidence": {
+      "run": "runs/20261012T135508Z_holdout",
+      "job_ids": [
+        "sRZ5BKzJGQY6W6qi",
+        "bzl0uVAUHr97o7OS",
+        "mfvGx2iSPl90if1d",
+        "sO7PWBZxAxQ09Qj8",
+        "m9znGlbbmlqRDYTt",
+        "tsrtaTW1oLbOwt7E",
+        "sHoR4eGLRyZQXeIl",
+        "W6ZumaVLGZptZium",
+        "QdgerXaTQdt9q8sF",
+        "E9fBewKn9dQr1BQs",
+        "tzMPAopLBg8A0yqT",
+        "Uv3CJMkl6Cvfqysc"
+      ]
+    }
+  },
+  {
+    "claim": "Flywheel-vs-r0 paired holdout delta",
+    "value": 0.049592250000000004,
+    "evidence": {
+      "ci": [
+        0.013749454166666713,
+        0.08890311458333328
+      ],
+      "job_ids": [
+        "htVpRFFNB7od6eKP",
+        "Nj2tIRCzLp0sE8Lz",
+        "Nw9VEiHwMzQg1zm2",
+        "j49bcXdfOUGZ12KZ",
+        "SZPxw0G8FIS8qvNF",
+        "m1IxuCoucmxLAWvp",
+        "d8AjpgQ6yI57wJhp",
+        "RcwfhxzXAITnpOE7",
+        "j11tNtUxT4pauMnX",
+        "mKZuTcyOX4tIG9ed",
+        "qdPJmWqhAFk5rd19",
+        "Ltm61NB37KqAJZeA",
+        "zm1S3y5MD1Gtt9hP",
+        "GmlFpjV3s5fCBaYe",
+        "eFa58knXtlrvdMC3",
+        "aD2dFODlF7HpAQJ2",
+        "nNxllWH9B7Jl7RAd",
+        "SljrAmL6zmhLjqxR",
+        "5I5p1DkLgC7gFrAL",
+        "25iafV7ibSAnY21Q",
+        "MvU8PIQIVun0axpy",
+        "sFWsXY2q0XsdYkcG",
+        "ZYRwhEpBr1Y1fw3o",
+        "1Zh1H6wJJ23o3WHW"
+      ]
+    }
+  },
+  {
+    "claim": "Control-vs-r0 paired holdout delta",
+    "value": 0.047888416666666656,
+    "evidence": {
+      "ci": [
+        0.010019775000000002,
+        0.08862941874999994
+      ],
+      "job_ids": [
+        "sRZ5BKzJGQY6W6qi",
+        "Nj2tIRCzLp0sE8Lz",
+        "bzl0uVAUHr97o7OS",
+        "j49bcXdfOUGZ12KZ",
+        "mfvGx2iSPl90if1d",
+        "m1IxuCoucmxLAWvp",
+        "sO7PWBZxAxQ09Qj8",
+        "RcwfhxzXAITnpOE7",
+        "m9znGlbbmlqRDYTt",
+        "mKZuTcyOX4tIG9ed",
+        "tsrtaTW1oLbOwt7E",
+        "Ltm61NB37KqAJZeA",
+        "sHoR4eGLRyZQXeIl",
+        "GmlFpjV3s5fCBaYe",
+        "W6ZumaVLGZptZium",
+        "aD2dFODlF7HpAQJ2",
+        "QdgerXaTQdt9q8sF",
+        "SljrAmL6zmhLjqxR",
+        "E9fBewKn9dQr1BQs",
+        "25iafV7ibSAnY21Q",
+        "tzMPAopLBg8A0yqT",
+        "sFWsXY2q0XsdYkcG",
+        "Uv3CJMkl6Cvfqysc",
+        "1Zh1H6wJJ23o3WHW"
+      ]
+    }
+  },
+  {
+    "claim": "Flywheel-vs-control paired holdout delta",
+    "value": 0.0017038333333333489,
+    "evidence": {
+      "ci": [
+        -0.005802352083333317,
+        0.009789735416666695
+      ],
+      "job_ids": [
+        "htVpRFFNB7od6eKP",
+        "sRZ5BKzJGQY6W6qi",
+        "Nw9VEiHwMzQg1zm2",
+        "bzl0uVAUHr97o7OS",
+        "SZPxw0G8FIS8qvNF",
+        "mfvGx2iSPl90if1d",
+        "d8AjpgQ6yI57wJhp",
+        "sO7PWBZxAxQ09Qj8",
+        "j11tNtUxT4pauMnX",
+        "m9znGlbbmlqRDYTt",
+        "qdPJmWqhAFk5rd19",
+        "tsrtaTW1oLbOwt7E",
+        "zm1S3y5MD1Gtt9hP",
+        "sHoR4eGLRyZQXeIl",
+        "eFa58knXtlrvdMC3",
+        "W6ZumaVLGZptZium",
+        "nNxllWH9B7Jl7RAd",
+        "QdgerXaTQdt9q8sF",
+        "5I5p1DkLgC7gFrAL",
+        "E9fBewKn9dQr1BQs",
+        "MvU8PIQIVun0axpy",
+        "tzMPAopLBg8A0yqT",
+        "ZYRwhEpBr1Y1fw3o",
+        "Uv3CJMkl6Cvfqysc"
+      ]
+    }
+  },
+  {
+    "claim": "Preregistered prediction in band",
+    "value": true,
+    "evidence": {
+      "prediction": {
+        "campaign": "flywheel-test",
+        "metric": "final_incumbent_holdout_mean_xeb",
+        "point": 0.975191,
+        "band": [
+          0.950381,
+          0.999
+        ],
+        "frozen_at": "2026-10-11T19:33:14+00:00",
+        "actual": 0.976113,
+        "scored": true,
+        "scored_at": "2026-10-12T15:25:59+00:00",
+        "in_band": true
+      },
+      "source": "researcher/PREDICTIONS.jsonl"
+    }
+  }
+]

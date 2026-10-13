@@ -1,0 +1,31 @@
+{
+  "exp_id": "EXP-007-HOLDOUT",
+  "one_shot": true,
+  "configs": {
+    "flywheel_final": {
+      "name": "r0-baseline",
+      "device": "mps.cpu",
+      "chi_alloc": "uniform64",
+      "permutation_seed": null,
+      "shots_alloc": "uniform20k"
+    },
+    "baseline_r0": {
+      "name": "r0-baseline",
+      "device": "mps.cpu",
+      "chi_alloc": "uniform64",
+      "permutation_seed": null,
+      "shots_alloc": "uniform20k"
+    },
+    "control_final": {
+      "name": "chi-easy32hard128",
+      "device": "mps.cpu",
+      "chi_alloc": "easy32hard128",
+      "permutation_seed": null,
+      "shots_alloc": "uniform20k"
+    }
+  },
+  "n_holdout": 12,
+  "metric": "mean normalized XEB over holdout, per config",
+  "suite_sha256": "bee1e97245f2cabfe34d3dab5c9aa19e64135db8d30a2ff3d4c7c03ef1fb36f7",
+  "frozen_at": "2026-10-07T02:25:13+00:00"
+}

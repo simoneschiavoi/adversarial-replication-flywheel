@@ -1,0 +1,23 @@
+{
+  "exp_id": "EXP-002B-G15B-PIVOT-SCREEN",
+  "registered_before_any_job_result_seen": true,
+  "context": "Lane P (sponsor peaked circuits) is 403-denied on the TEST account; pivot to Lane Q (pauli-path observable estimation on local RCS 30-56q) must be feasibility-probed before the G2 freeze.",
+  "design": {
+    "circuits": "local RCS brickwork, n in {32,40,56} x depth in {8,16}, seed = 20261200 + n*100 + d, stored as QPY with sha256",
+    "observable_probe": "Z on even sites, identity on odd (probe only; freeze uses frozen random-weight Pauli strings)",
+    "pauli_path_jobs": {"eps": [1e-5, 1e-3], "shots": null, "device": "pauli-path", "count": 12},
+    "mps_jobs": {"n": 56, "depth": 16, "chi": [64, 256], "shots": 20000, "device": "mps.cpu", "count": 2}
+  },
+  "gates": {"jobs_max": 20, "usd_max": 0.5},
+  "pass_criteria": {
+    "envelope_ok": "all pauli-path jobs COMPLETED with wall_min = (queue_time_ms + run_time_ms)/60000 <= 5.0; usable_sizes = sizes where every probed depth passed at eps=1e-5",
+    "eps_moves_ev": "exists (n,d) with |EV(1e-5) - EV(1e-3)| > 1e-9"
+  },
+  "predictions": {
+    "wall_pauli_56q_eps1e-5_min": "0.2 - 5.0 (unknown; this is the measurement)",
+    "eps_moves_ev": true,
+    "usd_total": 0.0
+  },
+  "failure_handling": "If envelope fails for a size, that size is dropped from the Lane Q freeze (documented shrink per cut order). If eps_moves_ev is false, Lane Q redesign happens BEFORE any freeze; this screen records a FAIL honestly.",
+  "no_promotion": true
+}

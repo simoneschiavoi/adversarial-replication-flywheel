@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-10-07T20:27:59+00:00",
+ "suite_sha256": "bee1e97245f2cabfe34d3dab5c9aa19e64135db8d30a2ff3d4c7c03ef1fb36f7",
+ "rounds_per_arm": {
+  "flywheel": 10,
+  "control": 10
+ },
+ "promotions": {
+  "flywheel": 0,
+  "control": 1
+ },
+ "baseline": {
+  "mean_xeb_val": 0.9531836666666665,
+  "cost_min": 35.3584
+ },
+ "min_delta": 0.026951928377626822,
+ "noise_sd_paired": 0.013475964188813411,
+ "best_flywheel": {
+  "round": 3,
+  "family": "chi_alloc",
+  "value": "easy32hard256",
+  "mean_delta": 0.04186758333333335,
+  "ci": [
+   -0.005638585416666652,
+   0.10049408958333336
+  ],
+  "accepted": false
+ },
+ "prediction": {
+  "campaign": "flywheel-test",
+  "metric": "final_incumbent_holdout_mean_xeb",
+  "point": 0.976592,
+  "band": [
+   0.953184,
+   0.999
+  ],
+  "frozen_at": "2026-10-06T07:01:55+00:00",
+  "actual": 0.927492,
+  "scored": true,
+  "scored_at": "2026-10-07T03:57:14+00:00",
+  "in_band": false
+ },
+ "holdout": {
+  "n_holdout": 12,
+  "results": {
+   "flywheel_final": {
+    "mean_xeb_holdout": 0.9274924166666666,
+    "wall_min": 30.1351
+   },
+   "baseline_r0": {
+    "mean_xeb_holdout": 0.9340130833333333,
+    "wall_min": 30.0807
+   },
+   "control_final": {
+    "mean_xeb_holdout": 0.9846966666666667,
+    "wall_min": 29.825
+   }
+  },
+  "paired": {
+   "control_vs_r0": {
+    "delta": 0.05068358333333329,
+    "ci": [
+     0.013266981249999952,
+     0.0896677145833333
+    ]
+   },
+   "flywheel_vs_r0": {
+    "delta": -0.006520666666666702,
+    "ci": [
+     -0.014921020833333352,
+     0.0015524020833332759
+    ]
+   },
+   "flywheel_vs_control": {
+    "delta": -0.05720424999999999,
+    "ci": [
+     -0.09678765624999996,
+     -0.02103102916666668
+    ]
+   }
+  }
+ },
+ "claims": {
+  "n_claims": 31,
+  "n_job_refs": 432,
+  "n_distinct_jobs": 336
+ },
+ "ledger": {
+  "jobs_total": 1097,
+  "devices": [
+   "cpu",
+   "mps.cpu",
+   "pauli-path"
+  ]
+ }
+}

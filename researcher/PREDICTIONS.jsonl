@@ -1,0 +1,1 @@
+{"campaign": "flywheel-test", "metric": "final_incumbent_holdout_mean_xeb", "point": 0.975191, "band": [0.950381, 0.999], "frozen_at": "2026-10-11T19:33:14+00:00", "actual": 0.976113, "scored": true, "scored_at": "2026-10-12T15:25:59+00:00", "in_band": true}

@@ -1,0 +1,126 @@
+{
+  "exp_id": "EXP-008-GATE-CALIBRATION",
+  "kind": "gate_power_calibration",
+  "frozen_at": "2026-10-07T17:35:00+00:00",
+  "frozen_before_any_dispatch": true,
+  "question": "At the campaign's 12-circuit decision scale, what is the gate's fidelity-component pass probability - P(mean delta > min_delta AND CI excludes 0), the two components the campaign gate evaluates on measurement data; the cost gate (wall-time ratio <= 1.02) is deterministic per config here and is NOT simulated - for a true effect of the size the campaign actually saw, and what is same-config run-to-run noise?",
+  "motivation": "Round 1 ran the same mutation (chi_alloc easy32hard128) in both arms: flywheel delta +0.0336 CI [-0.0013,+0.0737] REJECTED, control delta +0.0344 CI [+0.0010,+0.0744] PROMOTED - the gate verdict flipped on CI noise at n=12.",
+  "gates": {
+    "jobs_max": 200,
+    "usd_max": 0.50
+  },
+  "budget": {
+    "jobs": 192,
+    "jobs_formula": "48 circuits x 2 configs x 2 reps",
+    "usd_expected": 0.0,
+    "device": "mps.cpu",
+    "account": "test",
+    "max_concurrent": 2,
+    "per_job_timeout_s": 900
+  },
+  "no_contact_clause": "EXP-008 never reads, imports or derives from prototype/suite/ or any holdout artifact. Circuits are FRESH: generated from EXP008_SEED=20261007, with an import-time assertion (ast parse of src/freeze_suite.py) that EXP008_SEED is not among its integer seed literals (SPLIT_SEED=20261107, R_BASE_SEED=20261100) and that the 48 derived EXP-008 seeds are disjoint from the 48 derived suite seeds. The only suite-related read is the src/freeze_suite.py SOURCE for that assertion (not a suite artifact). Path arguments resolving inside suite/ or a holdout dir are refused by code in every subcommand.",
+  "design": {
+    "circuits": {
+      "qubits": [20, 22, 24, 26],
+      "depths": [4, 8, 12, 16],
+      "instances_per_cell": 3,
+      "total": 48,
+      "seed": 20261007,
+      "per_circuit_seed": "EXP008_SEED + n*100 + d*10 + i (same arithmetic shape as freeze_suite.py:86)",
+      "generator": "circuits.rcs_circuit - mirrors src/freeze_suite.py RCS brickwork, fresh seeds",
+      "truth": "local qiskit statevector probabilities, float32 .npy (sim_exact.save_probabilities - same method as the suite build)"
+    },
+    "configs": {
+      "base": {
+        "chi_alloc": "uniform64",
+        "chi_easy_depth_le_8": 64,
+        "chi_hard_depth_ge_12": 64,
+        "shots": 20000
+      },
+      "chal": {
+        "chi_alloc": "easy32hard128",
+        "chi_easy_depth_le_8": 32,
+        "chi_hard_depth_ge_12": 128,
+        "shots": 20000
+      },
+      "easy_hard_rule_provenance": "src/harness.py:52,150-152 (easy: d<=8, hard: d>=12); shots rule src/harness.py:63,155-157 (uniform20k = 20000 both classes); no permutation in either config"
+    },
+    "reps": 2,
+    "jobs_total": 192,
+    "job_names": "exp008-{base|chal}-q{Q}d{D}i{I}-rep{R}, R in {1,2}",
+    "idempotency_key": "job-name string (deterministic across runs); dispatch-once contract: a name with ANY provider row in jobs.sqlite is never re-dispatched (resume = collect by provider id); after each group dispatch asserts name<->provider-id uniqueness (exactly one id per name, no id shared across names); within a live run_batch, bq's batch-level reservation key + 120-min same-name adoption window cover process kills; a terminal-failed job is recorded with its error and never resubmitted (experiment then incomplete by prereg)"
+  },
+  "dispatch_guards": [
+    "1. ledger/experiments.json must show EXP-008-GATE-CALIBRATION state REGISTERED (refuse otherwise - expected during review)",
+    "1b. on-disk SPEC.md and PREREGISTRATION.json sha256 must match the registration pins in ledger/experiments.json (refuse on drift - post-registration edits de-register the prereg)",
+    "2. daily cap: today's mps.cpu+pauli-path rows in ledger/jobs.sqlite (column submitted_at, UTC date) + remaining plan jobs must be <= 900, else refuse until after 00:00 UTC",
+    "3. refuse any path argument resolving inside suite/ or a holdout dir; plan artifact paths must be relative, contained in the data dir after resolve() and realpath() (no symlink escape), and never inside suite/holdout",
+    "4. account guard: BQ_ACCOUNT must be unset or 'test' (TEST account only)",
+    "5. dispatch and analyze recompute every qpy/truth sha256 against the plan pins and check truth shape (float32, length 2^n) before any cloud call or scoring"
+  ],
+  "analysis": {
+    "scoring": {
+      "xeb": "metrics.xeb_normalized(metrics.canonical_counts(counts, 'mps.cpu'), truth_npy) - canonical bit order un-reverses mps keys",
+      "quantile": "numpy np.quantile default (linear) interpolation",
+      "circuit_order": "plan.json circuits order",
+      "counts_validation": "before scoring: provider_job_id present + matching the ledger row for that name, run_status COMPLETED, counts sum == 20000, bitstring width == n, 192 distinct provider ids across 192 jobs; any violation = SystemExit (no partial analysis)",
+      "failure_policy": "missing counts / non-COMPLETED / provenance mismatch -> SystemExit, never defaults",
+      "once_only": "analyze records an inputs digest (plan.json + all counts blobs); an existing analysis.json is never overwritten unless the digest is unchanged AND --redo is passed; a digest mismatch is always refused"
+    },
+    "A1": {
+      "what": "per-circuit paired delta = challenger - baseline",
+      "how": "per rep (2 x 48 values) and pooled per circuit over the 2 reps (48 values); pooled value = mean of the two per-rep deltas"
+    },
+    "A2": {
+      "what": "bootstrap 95% CI of the pooled mean",
+      "how": "percentile method over the 48 pooled deltas",
+      "n_boot": 10000,
+      "seed": 11,
+      "rng": "numpy default_rng(11), one integers(0,48,size=(10000,48)) draw, means along axis 1",
+      "note": "10000 is an EXP-008 choice, larger than the campaign decision bootstrap's 5000 (src/metrics.py:128 paired_delta, seed 3)"
+    },
+    "A3": {
+      "what": "same-config repeatability",
+      "how": "per circuit |rep1 - rep2| of the per-circuit XEB, per config; report mean and sd (ddof=1) of that quantity per config, plus mean/min_delta ratios"
+    },
+    "A4": {
+      "what": "fidelity-component pass-probability simulation at the n=12 decision scale",
+      "cost_gate": "the campaign cost gate (wall-time ratio <= 1.02) is NOT simulated - EXP-008 per-config cost is deterministic",
+      "scope": "the fresh library includes n=22 circuits (absent from the frozen suite); subset draws model circuit-subset choice, not fresh shot noise",
+      "n_draws": 10000,
+      "subset_rule": "12 of 48 circuits per draw, without replacement, numpy default_rng(12)",
+      "gate_components": [
+        "mean of the 12 drawn pooled deltas > min_delta (0.026951928377626822)",
+        "percentile-bootstrap 95% CI over the 12 drawn circuits excludes 0, rule ci_low > 0 (campaign semantics, src/metrics.py:146)"
+      ],
+      "inner_bootstrap": {
+        "resamples": 2000,
+        "seed": 13,
+        "rng": "numpy default_rng(13), fresh stream per effect level, one integers(0,12,size=(2000,12)) draw per subset"
+      },
+      "levels": [
+        "(a) observed pooled deltas as-is",
+        "(b) shifted by (min_delta - observed_pooled_mean) so the true mean sits exactly at min_delta"
+      ],
+      "A4b": "same subset draws on the two per-rep single-evaluation libraries (rep1, rep2; 48 deltas each, same circuit subsets); the pooled two-rep library and the per-rep libraries bracket the campaign's single-evaluation decision",
+      "reported": "P(mean>min_delta), P(CI excludes 0), P(both)=fidelity-component pass probability, per level, pooled and per-rep (A4b)",
+      "deviation": "inner bootstrap uses 2000 resamples, not the campaign decision bootstrap's 5000 (src/metrics.py:128, seed 3): 10000 draws x 5000 resamples x 12 circuits was the nesting feasibility bound; the inner rng(13) stream advances across draws within each effect level (fresh stream per level) - an approximation of the campaign's fresh-per-decision rng"
+    },
+    "A5": {
+      "what": "frozen prediction, scored once by analyze",
+      "metric": "pooled mean per-circuit paired delta (A1)",
+      "point": 0.045,
+      "band": [0.015, 0.08],
+      "score": "in_band = band_low <= observed <= band_high, reported in data/analysis.json and ANALYSIS.md"
+    }
+  },
+  "prediction": {
+    "metric": "pooled mean per-circuit paired delta (challenger easy32hard128 - baseline uniform64, 48 fresh circuits)",
+    "point": 0.045,
+    "band_low": 0.015,
+    "band_high": 0.08,
+    "rationale": "chi telemetry (EXP-004) showed hard circuits chi-starved at 64 and easy circuits chi-saturated; shifting chi 64->128 on d>=12 should recover a large fraction of their truncation loss while 32 on d<=8 costs little; band widened for circuit-fresh sampling and MPS-device noise"
+  },
+  "min_delta": 0.026951928377626822,
+  "min_delta_provenance": "runs/flywheel/state.json:116 (G3: max(2.0*sd_paired, 0.005), noise_sd=0.013475964188813411)"
+}

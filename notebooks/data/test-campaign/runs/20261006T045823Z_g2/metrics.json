@@ -1,0 +1,15 @@
+{
+  "gate": "G2",
+  "exp": "EXP-003-G2-FREEZE",
+  "suite_sha256": "bee1e97245f2cabfe34d3dab5c9aa19e64135db8d30a2ff3d4c7c03ef1fb36f7",
+  "counts": {
+    "train": 24,
+    "holdout": 12,
+    "val": 12
+  },
+  "circuits": 48,
+  "holdout_locked": true,
+  "freeze_dispatched_cloud_jobs": 0,
+  "usd": 0.0,
+  "jobs": 0
+}

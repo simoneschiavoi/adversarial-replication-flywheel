@@ -1,0 +1,20 @@
+{
+  "gate": "EXP-009-PROD-KEY-SMOKE",
+  "utc": "2026-10-07T10:38:21.568085+00:00",
+  "account_label": "account=personal key=\u2026REDACTED",
+  "key_last4_distinct_from_test": true,
+  "sdk_version": "0.18.12b1",
+  "job_id": "YW9stZy29kWIPOaW",
+  "job_name": "exp009-prodsmoke-ghz",
+  "device": "cpu",
+  "run_status": "COMPLETED",
+  "job_id_round_trip_ok": true,
+  "wall_clock_submit_to_result_s": 0.961,
+  "queue_time_ms": 108,
+  "run_time_ms": 1,
+  "billed_cost_usd": 0.0,
+  "shots": 512,
+  "num_qubits": 4,
+  "ghz_probability_mass": 1.0,
+  "EXP009_PASS": true
+}

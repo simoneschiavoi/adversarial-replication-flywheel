@@ -1,0 +1,59 @@
+{
+  "laws": [
+    {
+      "id": "L-001",
+      "name": "PASSIVE_INGREDIENT",
+      "scope": "mutation selection; any ingredient (knob, permutation, allocation trick) activated in a flywheel round",
+      "statement": "An ingredient activated in 3 flywheel trials with no estimator change beyond shot noise is dead: the mechanism class is killed and its fixtures become repeat-forbidden.",
+      "predicate_description": "count(activated trials with |delta_val_score| <= noise_band) >= 3",
+      "evidence": "Port of the ARC-AGI-3 passive-information law (measured payoff: 25-35 GPU-h of repeat burns prevented after codification).",
+      "repeat_forbidden_fixtures": [],
+      "reopening_falsifier": "A structurally new activation of the same ingredient (different mechanism path, not a parameter rescale) produces a paired CI-excluding-zero improvement on val.",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "L-002",
+      "name": "NO_ORACLE",
+      "scope": "acceptance; promotion decisions",
+      "statement": "No candidate is accepted without a frozen-basis incumbent: comparisons are always against the current ledgered incumbent under the frozen suite manifest, never against a re-tuned reference.",
+      "predicate_description": "promotion requires incumbent_spec_sha256 present and equal to the frozen manifest basis",
+      "evidence": "JS-ASIC ledger lineage: every PROMOTE names its parent experiment.",
+      "repeat_forbidden_fixtures": [],
+      "reopening_falsifier": "None — structural law.",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "L-003",
+      "name": "HOLDOUT-PROTECTED",
+      "scope": "holdout suite; report generation",
+      "statement": "The 12 LOCKED holdout circuits are evaluated exactly once, at campaign close, by a dedicated evaluator that first checks campaign completion in the ledger. Any interim touch voids the campaign.",
+      "predicate_description": "holdout_eval runs only if ledger shows EXP-005 terminal AND holdout_eval.json absent",
+      "evidence": "Adjudicated design (RSI-SYSTEM-DESIGN.md S5 divergences: terminal-only holdout + val canary).",
+      "repeat_forbidden_fixtures": [],
+      "reopening_falsifier": "None — structural law.",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "L-004",
+      "name": "NO-HEALTHY-RERUN",
+      "scope": "job dispatch; run lifecycle",
+      "statement": "A completed, valid run is never re-executed. Re-execution is allowed only for INFRA-class failures (network, queue timeout, sandbox) with a cause class recorded in the ledger.",
+      "predicate_description": "re-dispatch allowed only if previous attempt has cause_class in {INFRA_FAILURE, AMBIGUOUS_ACK}",
+      "evidence": "JS-ASIC 3-attempt cap + ARC immutable sha-verified harvest.",
+      "repeat_forbidden_fixtures": [],
+      "reopening_falsifier": "None — structural law.",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "L-005",
+      "name": "COST-INCLUDES-QUEUE-MINUTES",
+      "scope": "cost accounting; Pareto comparisons",
+      "statement": "The cost axis of every Pareto comparison is total wall minutes = queue + run time summed over the round's jobs, not run time alone.",
+      "predicate_description": "score (cost) metric = sum(queue_time_ms + run_time_ms)/60000 over round jobs",
+      "evidence": "Adjudicated design: queue minutes are real spend on a metered platform.",
+      "repeat_forbidden_fixtures": [],
+      "reopening_falsifier": "None — accounting rule.",
+      "status": "ACTIVE"
+    }
+  ]
+}

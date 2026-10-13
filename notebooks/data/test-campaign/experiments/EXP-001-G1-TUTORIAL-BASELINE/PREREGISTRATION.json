@@ -1,0 +1,17 @@
+{
+  "exp_id": "EXP-001-G1-TUTORIAL-BASELINE",
+  "hypothesis": "An MPS sampler with fixed bond dimension chi=64 loses XEB fidelity against the exact distribution as RCS depth grows, while the exact cpu sampler stays at ~1 (per-circuit normalized linear XEB: raw XEB divided by the exact-sampler constant C = 2^n*sum(p^2)-1, measured per circuit because shallow RCS circuits are pre-Porter-Thomas) — reproducing the tutorial's fidelity-vs-depth structure at exact-truth scale.",
+  "predictions": {
+    "cpu_xeb_norm_all_depths": ">= 0.90 (sampling noise only)",
+    "mps64_xeb_norm_trend_n26": "monotone-ish decay from >0.5 at depth 4 toward <=0.3 at depth 16"
+  },
+  "frozen_at": "before dispatch",
+  "sizes": [20, 24, 26],
+  "depths": [4, 8, 12, 16],
+  "shots": 5000,
+  "chi": 64,
+  "base_seed": 20261006,
+  "xeb_normalization": "F_norm = (2^n*E[p_ideal(x)]-1) / (2^n*sum(p_ideal^2)-1); raw also reported",
+  "job_count_planned": 24,
+  "usd_planned": 0.0
+}

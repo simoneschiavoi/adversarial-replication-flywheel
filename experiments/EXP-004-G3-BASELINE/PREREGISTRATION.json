@@ -1,0 +1,19 @@
+{
+  "exp_id": "EXP-004-G3-BASELINE",
+  "hypothesis": "The uniform chi=64 / 20k-shot MPS config defines a beatable round-0 incumbent: its val XEB is materially below 1 on the deep circuits (G1 evidence: 0.76 at 26q d=16), so allocation mutations have headroom.",
+  "config": {
+    "name": "r0-baseline",
+    "device": "mps.cpu",
+    "chi_alloc": "uniform64",
+    "permutation_seed": null,
+    "shots_alloc": "uniform20k"
+  },
+  "frozen_at": "2026-10-11T17:34:56+00:00",
+  "min_delta_formula": "max(2.0*sd_paired, 0.005)",
+  "chi_sweep": [
+    32,
+    64,
+    128,
+    256
+  ]
+}

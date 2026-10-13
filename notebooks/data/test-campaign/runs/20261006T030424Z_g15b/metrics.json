@@ -1,0 +1,216 @@
+{
+  "gate": "G1.5b",
+  "exp": "EXP-002B-G15B-PIVOT-SCREEN",
+  "envelope_ok": false,
+  "usable_sizes": [],
+  "eps_moves_ev": false,
+  "pauli_path": [
+    {
+      "n": 32,
+      "depth": 8,
+      "eps": 1e-05,
+      "error": "BQJobNotCompleteError: Job 47CzlBaVs03YNvSZ finished with status: FAILED_VALIDATION. Truncation threshold used is too small for the input circuit/observable. It could lead to memory overflow. Please t"
+    },
+    {
+      "n": 32,
+      "depth": 8,
+      "eps": 0.001,
+      "job_id": "BLObMgEuz7I1jMZL",
+      "run_status": "COMPLETED",
+      "wall_min": 0.049,
+      "ev": 0.0,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "n": 32,
+      "depth": 16,
+      "eps": 1e-05,
+      "error": "BQJobNotCompleteError: Job fpiZ165Vsh8fTjAq finished with status: FAILED_VALIDATION. Truncation threshold used is too small for the input circuit/observable. It could lead to memory overflow. Please t"
+    },
+    {
+      "n": 32,
+      "depth": 16,
+      "eps": 0.001,
+      "job_id": "CahjDNpfg7cSu9cq",
+      "run_status": "COMPLETED",
+      "wall_min": 0.055,
+      "ev": 0.0,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "n": 40,
+      "depth": 8,
+      "eps": 1e-05,
+      "error": "BQJobNotCompleteError: Job z1zAPf1RwooMJ8FS finished with status: FAILED_VALIDATION. Truncation threshold used is too small for the input circuit/observable. It could lead to memory overflow. Please t"
+    },
+    {
+      "n": 40,
+      "depth": 8,
+      "eps": 0.001,
+      "job_id": "Lz5TA4xIZjzvKF3X",
+      "run_status": "COMPLETED",
+      "wall_min": 0.055,
+      "ev": 0.0,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "n": 40,
+      "depth": 16,
+      "eps": 1e-05,
+      "error": "BQJobNotCompleteError: Job 7ntd8WwXkSokO4Hl finished with status: FAILED_VALIDATION. Truncation threshold used is too small for the input circuit/observable. It could lead to memory overflow. Please t"
+    },
+    {
+      "n": 40,
+      "depth": 16,
+      "eps": 0.001,
+      "job_id": "VoobmPPtTfEfsoyc",
+      "run_status": "COMPLETED",
+      "wall_min": 0.06,
+      "ev": 0.0,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "n": 56,
+      "depth": 8,
+      "eps": 1e-05,
+      "error": "BQJobNotCompleteError: Job ovf9d7qhKf6Lt86G finished with status: FAILED_VALIDATION. Truncation threshold used is too small for the input circuit/observable. It could lead to memory overflow. Please t"
+    },
+    {
+      "n": 56,
+      "depth": 8,
+      "eps": 0.001,
+      "job_id": "1WNs26Z25X4zpMeo",
+      "run_status": "COMPLETED",
+      "wall_min": 0.058,
+      "ev": 0.0,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "n": 56,
+      "depth": 16,
+      "eps": 1e-05,
+      "error": "BQJobNotCompleteError: Job pyAGsgGPIdPRhOIN finished with status: FAILED_VALIDATION. Truncation threshold used is too small for the input circuit/observable. It could lead to memory overflow. Please t"
+    },
+    {
+      "n": 56,
+      "depth": 16,
+      "eps": 0.001,
+      "job_id": "halvVLWZJoqIuz6G",
+      "run_status": "COMPLETED",
+      "wall_min": 0.068,
+      "ev": 0.0,
+      "cost_usd": 0.0,
+      "error": null
+    }
+  ],
+  "mps": [
+    {
+      "n": 56,
+      "depth": 16,
+      "chi": 64,
+      "job_id": "AZdMstESun7cbIFM",
+      "run_status": "COMPLETED",
+      "wall_min": 7.532,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "n": 56,
+      "depth": 16,
+      "chi": 256,
+      "job_id": "mf4vUb4IIQB5ZFWA",
+      "run_status": "COMPLETED",
+      "wall_min": 9.286,
+      "cost_usd": 0.0,
+      "error": null
+    }
+  ],
+  "usd": 0,
+  "jobs": 23,
+  "probe3_ev_semantics": {
+    "run_dir": "runs/20261006T032528Z_g15c",
+    "question": "g15b found eps=1e-3 EV exactly 0.0 and eps=1e-5 server-rejected; H1 (all paths truncated) vs H2 (pipeline misreading). Separated with local exact ground truth at 20q + (weight, eps) window at 32q.",
+    "verdict": {
+      "ev_pipeline_ok": false,
+      "h1_truncation_zero_ev": true,
+      "label_convention": null
+    },
+    "decisive_rows": [
+      {
+        "label": "g15c-A20-w10-e0.0001",
+        "job_id": "tjiUQT7ynMGEAdix",
+        "status": "COMPLETED",
+        "ev": 0.0,
+        "wall_min": 4.6743
+      },
+      {
+        "label": "g15c-A20-w10-e0.001",
+        "job_id": "zFhpsyQvj253UIZG",
+        "status": "COMPLETED",
+        "ev": 0.0,
+        "wall_min": 0.0447
+      },
+      {
+        "label": "g15c-B32-w4-e0.0001",
+        "job_id": "tbrI6J8MDmLxME0u",
+        "status": "COMPLETED",
+        "ev": 0.0,
+        "wall_min": 3.9142
+      },
+      {
+        "label": "g15c-B32-w4-e0.001",
+        "job_id": "wZmI0j1gyIhgF4V4",
+        "status": "COMPLETED",
+        "ev": 0.0,
+        "wall_min": 0.0493
+      },
+      {
+        "label": "g15c-C32-w8-e0.0001",
+        "job_id": "TOHVlUuVd9klhqLy",
+        "status": "COMPLETED",
+        "ev": 0.0,
+        "wall_min": 4.5415
+      },
+      {
+        "label": "g15c-C32-w8-e0.0003",
+        "job_id": "ifNOjWtmFehpVndO",
+        "status": "COMPLETED",
+        "ev": 0.0,
+        "wall_min": 0.4063
+      }
+    ],
+    "rejected_rows": [
+      {
+        "label": "g15c-A20-w10-e1e-05",
+        "job_id": "28ikE6gaXfTVLS88",
+        "status": "FAILED_VALIDATION",
+        "error": "Truncation threshold used is too small for the input circuit/observable. It could lead to memory overflow. Please try wi"
+      },
+      {
+        "label": "g15c-A20-w10-e3e-05",
+        "job_id": "dXVuCOcsfDxDfHX0",
+        "status": "FAILED_VALIDATION",
+        "error": "Job dXVuCOcsfDxDfHX0 finished with status: FAILED_VALIDATION. Truncation threshold used is too small for the input circu"
+      },
+      {
+        "label": "g15c-B32-w4-e1e-05",
+        "job_id": "m1H0DKZE6Nj5eL7B",
+        "status": "FAILED_VALIDATION",
+        "error": "Job m1H0DKZE6Nj5eL7B finished with status: FAILED_VALIDATION. Truncation threshold used is too small for the input circu"
+      }
+    ],
+    "conclusion": "H1 CONFIRMED: every feasible-eps pauli-path job (eps>=1e-4, weights 4/8/10, n in {20,32}) returns EV exactly 0.0; at 20q weight-10 eps=1e-4 the job ran 4.67 min of genuine compute and still returned 0.0 vs exact -0.001112 (job tjiUQT7ynMGEAdix). eps<=3e-5 is FAILED_VALIDATION everywhere (memory overflow). No usable (weight, eps) window on random RCS. Lane Q abandoned; G2 froze the exact-truth mps.cpu design (EXP-003)."
+  },
+  "protocol_deviations": [
+    {
+      "deviation": "jobs 23 > gate jobs_max 20 (g15b 14 preregistered + g15c 9 follow-up probes under the same EXP-002B registration)",
+      "cause": "pass_criteria eps_moves_ev evaluated false ambiguously (EV 0.0 could be truncation or pipeline misuse); the prereg's own failure_handling clause requires the redesign decision BEFORE any freeze, and H1/H2 disambiguation required the exact-truth comparison. All 9 extra jobs pauli-path, $0.00.",
+      "visibility": "record() does not gate jobs_max (gates bind at promote; this experiment is no_promotion), so the breach is disclosed here in-band instead of silently passing."
+    }
+  ]
+}

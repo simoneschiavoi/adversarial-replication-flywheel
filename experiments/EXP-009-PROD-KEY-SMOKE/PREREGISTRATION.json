@@ -1,0 +1,11 @@
+{
+  "exp_id": "EXP-009-PROD-KEY-SMOKE",
+  "hypothesis": "The personal-account key in .env (BLUEQUBIT_API_KEY_ACCOUNT_PROD) authenticates end-to-end via the BQ_ACCOUNT=personal switch in src/bq.py and returns a billable job record with a working job-id round-trip on the cpu device.",
+  "gate_values": {
+    "ghz_mass_min": 0.90,
+    "usd_max": 0.01,
+    "jobs_max": 2
+  },
+  "purpose": "De-risk the Oct-11 replication run: key validity, account switch, billing visibility on the personal account. No scientific claim, no acceptance decision.",
+  "registered": "2026-10-07T00:00:00Z"
+}

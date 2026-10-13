@@ -1,0 +1,32 @@
+{
+  "exp_id": "EXP-005-R06",
+  "round": 6,
+  "arm": "flywheel",
+  "mutation": {
+    "family": "permutation",
+    "value": 23
+  },
+  "candidate_config": {
+    "name": "perm23",
+    "device": "mps.cpu",
+    "chi_alloc": "easy32hard128",
+    "permutation_seed": 23,
+    "shots_alloc": "uniform20k"
+  },
+  "incumbent_config": {
+    "name": "chi-easy32hard128",
+    "device": "mps.cpu",
+    "chi_alloc": "easy32hard128",
+    "permutation_seed": null,
+    "shots_alloc": "uniform20k"
+  },
+  "gates": {
+    "fidelity_min": 1.013817,
+    "score_max": 29.5892,
+    "ci_excludes_null": true,
+    "usd_max": 0.5,
+    "jobs_max": 40
+  },
+  "min_delta_effective": 0.02543671062687061,
+  "frozen_at": "2026-10-12T04:03:48+00:00"
+}

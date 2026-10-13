@@ -1,0 +1,407 @@
+{
+  "gate": "G6",
+  "exp": "EXP-007-HOLDOUT",
+  "evaluated_at": "2026-10-07T03:57:14+00:00",
+  "suite_sha256": "bee1e97245f2cabfe34d3dab5c9aa19e64135db8d30a2ff3d4c7c03ef1fb36f7",
+  "n_holdout": 12,
+  "results": {
+    "flywheel_final": {
+      "config": {
+        "name": "r0-baseline",
+        "device": "mps.cpu",
+        "chi_alloc": "uniform64",
+        "permutation_seed": null,
+        "shots_alloc": "uniform20k"
+      },
+      "rows": [
+        {
+          "id": "rcs_n20_d4_s20263143",
+          "n": 20,
+          "depth": 4,
+          "job_id": "R0Avh5cmuvOd2C8h",
+          "run_status": "COMPLETED",
+          "wall_min": 1.7091,
+          "cost_usd": 0.0,
+          "xeb": 0.983379
+        },
+        {
+          "id": "rcs_n20_d12_s20263223",
+          "n": 20,
+          "depth": 12,
+          "job_id": "zl5DD4kkxQAzxVAr",
+          "run_status": "COMPLETED",
+          "wall_min": 2.3403,
+          "cost_usd": 0.0,
+          "xeb": 0.993708
+        },
+        {
+          "id": "rcs_n20_d16_s20263263",
+          "n": 20,
+          "depth": 16,
+          "job_id": "Jzgt3s5vEMiPQoFN",
+          "run_status": "COMPLETED",
+          "wall_min": 2.3697,
+          "cost_usd": 0.0,
+          "xeb": 0.827105
+        },
+        {
+          "id": "rcs_n24_d4_s20263541",
+          "n": 24,
+          "depth": 4,
+          "job_id": "DpwUCpQ5dt96Shxn",
+          "run_status": "COMPLETED",
+          "wall_min": 2.1236,
+          "cost_usd": 0.0,
+          "xeb": 0.986189
+        },
+        {
+          "id": "rcs_n24_d4_s20263543",
+          "n": 24,
+          "depth": 4,
+          "job_id": "6RzSdwAn1zadxOic",
+          "run_status": "COMPLETED",
+          "wall_min": 2.1227,
+          "cost_usd": 0.0,
+          "xeb": 1.020023
+        },
+        {
+          "id": "rcs_n24_d8_s20263583",
+          "n": 24,
+          "depth": 8,
+          "job_id": "Y0c22YoHLoOSQc1G",
+          "run_status": "COMPLETED",
+          "wall_min": 2.8385,
+          "cost_usd": 0.0,
+          "xeb": 0.994198
+        },
+        {
+          "id": "rcs_n24_d12_s20263621",
+          "n": 24,
+          "depth": 12,
+          "job_id": "JibOc8N1HG9NIolp",
+          "run_status": "COMPLETED",
+          "wall_min": 2.8812,
+          "cost_usd": 0.0,
+          "xeb": 0.989577
+        },
+        {
+          "id": "rcs_n24_d12_s20263623",
+          "n": 24,
+          "depth": 12,
+          "job_id": "INgn4vbZ41m0oRDd",
+          "run_status": "COMPLETED",
+          "wall_min": 2.875,
+          "cost_usd": 0.0,
+          "xeb": 0.995169
+        },
+        {
+          "id": "rcs_n24_d16_s20263660",
+          "n": 24,
+          "depth": 16,
+          "job_id": "qgh0UzVLTfhWfpid",
+          "run_status": "COMPLETED",
+          "wall_min": 2.8689,
+          "cost_usd": 0.0,
+          "xeb": 0.800087
+        },
+        {
+          "id": "rcs_n24_d16_s20263662",
+          "n": 24,
+          "depth": 16,
+          "job_id": "8XKH6ljHfkf5fhxq",
+          "run_status": "COMPLETED",
+          "wall_min": 2.8554,
+          "cost_usd": 0.0,
+          "xeb": 0.741953
+        },
+        {
+          "id": "rcs_n24_d16_s20263663",
+          "n": 24,
+          "depth": 16,
+          "job_id": "7lnGIXlllntfCTxU",
+          "run_status": "COMPLETED",
+          "wall_min": 2.8668,
+          "cost_usd": 0.0,
+          "xeb": 0.786267
+        },
+        {
+          "id": "rcs_n26_d4_s20263743",
+          "n": 26,
+          "depth": 4,
+          "job_id": "KrXtVMhlLdXSBtkJ",
+          "run_status": "COMPLETED",
+          "wall_min": 2.2839,
+          "cost_usd": 0.0,
+          "xeb": 1.012254
+        }
+      ],
+      "mean_xeb_holdout": 0.9274924166666666
+    },
+    "baseline_r0": {
+      "config": {
+        "name": "r0-baseline",
+        "device": "mps.cpu",
+        "chi_alloc": "uniform64",
+        "permutation_seed": null,
+        "shots_alloc": "uniform20k"
+      },
+      "rows": [
+        {
+          "id": "rcs_n20_d4_s20263143",
+          "n": 20,
+          "depth": 4,
+          "job_id": "8PpCCqUYGiAVgd3h",
+          "run_status": "COMPLETED",
+          "wall_min": 1.734,
+          "cost_usd": 0.0,
+          "xeb": 1.007821
+        },
+        {
+          "id": "rcs_n20_d12_s20263223",
+          "n": 20,
+          "depth": 12,
+          "job_id": "ElflBBJpv8trzidY",
+          "run_status": "COMPLETED",
+          "wall_min": 2.3546,
+          "cost_usd": 0.0,
+          "xeb": 0.996349
+        },
+        {
+          "id": "rcs_n20_d16_s20263263",
+          "n": 20,
+          "depth": 16,
+          "job_id": "uW3quuM9ffQVBUPF",
+          "run_status": "COMPLETED",
+          "wall_min": 2.3384,
+          "cost_usd": 0.0,
+          "xeb": 0.815462
+        },
+        {
+          "id": "rcs_n24_d4_s20263541",
+          "n": 24,
+          "depth": 4,
+          "job_id": "lZu49aTmHyaw0UVf",
+          "run_status": "COMPLETED",
+          "wall_min": 2.1191,
+          "cost_usd": 0.0,
+          "xeb": 1.011061
+        },
+        {
+          "id": "rcs_n24_d4_s20263543",
+          "n": 24,
+          "depth": 4,
+          "job_id": "vGgMoYbF88CzgLXp",
+          "run_status": "COMPLETED",
+          "wall_min": 2.0754,
+          "cost_usd": 0.0,
+          "xeb": 1.004202
+        },
+        {
+          "id": "rcs_n24_d8_s20263583",
+          "n": 24,
+          "depth": 8,
+          "job_id": "f0H16R9uHML1d6Ud",
+          "run_status": "COMPLETED",
+          "wall_min": 2.8385,
+          "cost_usd": 0.0,
+          "xeb": 1.02462
+        },
+        {
+          "id": "rcs_n24_d12_s20263621",
+          "n": 24,
+          "depth": 12,
+          "job_id": "1PzS8g0yqiJfmqAE",
+          "run_status": "COMPLETED",
+          "wall_min": 2.8581,
+          "cost_usd": 0.0,
+          "xeb": 0.984364
+        },
+        {
+          "id": "rcs_n24_d12_s20263623",
+          "n": 24,
+          "depth": 12,
+          "job_id": "Lg1yxJ0FG5inY3d3",
+          "run_status": "COMPLETED",
+          "wall_min": 2.858,
+          "cost_usd": 0.0,
+          "xeb": 0.995256
+        },
+        {
+          "id": "rcs_n24_d16_s20263660",
+          "n": 24,
+          "depth": 16,
+          "job_id": "16KyaBBuHGpsXfdj",
+          "run_status": "COMPLETED",
+          "wall_min": 2.8502,
+          "cost_usd": 0.0,
+          "xeb": 0.799489
+        },
+        {
+          "id": "rcs_n24_d16_s20263662",
+          "n": 24,
+          "depth": 16,
+          "job_id": "HmgEbx0YrTi7MfFw",
+          "run_status": "COMPLETED",
+          "wall_min": 2.8669,
+          "cost_usd": 0.0,
+          "xeb": 0.763445
+        },
+        {
+          "id": "rcs_n24_d16_s20263663",
+          "n": 24,
+          "depth": 16,
+          "job_id": "LzJ7sq74QNKn3PMV",
+          "run_status": "COMPLETED",
+          "wall_min": 2.9061,
+          "cost_usd": 0.0,
+          "xeb": 0.7894
+        },
+        {
+          "id": "rcs_n26_d4_s20263743",
+          "n": 26,
+          "depth": 4,
+          "job_id": "xkn2Z3yVIP9M7tEe",
+          "run_status": "COMPLETED",
+          "wall_min": 2.2814,
+          "cost_usd": 0.0,
+          "xeb": 1.016688
+        }
+      ],
+      "mean_xeb_holdout": 0.9340130833333333
+    },
+    "control_final": {
+      "config": {
+        "name": "chi-easy32hard128",
+        "device": "mps.cpu",
+        "chi_alloc": "easy32hard128",
+        "permutation_seed": null,
+        "shots_alloc": "uniform20k"
+      },
+      "rows": [
+        {
+          "id": "rcs_n20_d4_s20263143",
+          "n": 20,
+          "depth": 4,
+          "job_id": "ovs1wW0quByk0YMI",
+          "run_status": "COMPLETED",
+          "wall_min": 1.7196,
+          "cost_usd": 0.0,
+          "xeb": 0.998364
+        },
+        {
+          "id": "rcs_n20_d12_s20263223",
+          "n": 20,
+          "depth": 12,
+          "job_id": "oyQ4y2ZzNMNzNWvj",
+          "run_status": "COMPLETED",
+          "wall_min": 2.3839,
+          "cost_usd": 0.0,
+          "xeb": 1.007197
+        },
+        {
+          "id": "rcs_n20_d16_s20263263",
+          "n": 20,
+          "depth": 16,
+          "job_id": "l2GLKxsckM3iphPN",
+          "run_status": "COMPLETED",
+          "wall_min": 2.3925,
+          "cost_usd": 0.0,
+          "xeb": 0.953876
+        },
+        {
+          "id": "rcs_n24_d4_s20263541",
+          "n": 24,
+          "depth": 4,
+          "job_id": "HyI0wkpsz47J58B4",
+          "run_status": "COMPLETED",
+          "wall_min": 2.1152,
+          "cost_usd": 0.0,
+          "xeb": 0.999211
+        },
+        {
+          "id": "rcs_n24_d4_s20263543",
+          "n": 24,
+          "depth": 4,
+          "job_id": "0t4KAHVrsSUU8W0H",
+          "run_status": "COMPLETED",
+          "wall_min": 2.0882,
+          "cost_usd": 0.0,
+          "xeb": 1.012352
+        },
+        {
+          "id": "rcs_n24_d8_s20263583",
+          "n": 24,
+          "depth": 8,
+          "job_id": "ZX06JqDUD958snOD",
+          "run_status": "COMPLETED",
+          "wall_min": 2.1191,
+          "cost_usd": 0.0,
+          "xeb": 1.041911
+        },
+        {
+          "id": "rcs_n24_d12_s20263621",
+          "n": 24,
+          "depth": 12,
+          "job_id": "9KhBiIRp0tAiuTZU",
+          "run_status": "COMPLETED",
+          "wall_min": 2.9136,
+          "cost_usd": 0.0,
+          "xeb": 1.006777
+        },
+        {
+          "id": "rcs_n24_d12_s20263623",
+          "n": 24,
+          "depth": 12,
+          "job_id": "FoHMsuMvlbjr1bcl",
+          "run_status": "COMPLETED",
+          "wall_min": 2.9346,
+          "cost_usd": 0.0,
+          "xeb": 0.997461
+        },
+        {
+          "id": "rcs_n24_d16_s20263660",
+          "n": 24,
+          "depth": 16,
+          "job_id": "ZnRShvLPUjWRTcO4",
+          "run_status": "COMPLETED",
+          "wall_min": 2.9393,
+          "cost_usd": 0.0,
+          "xeb": 0.947582
+        },
+        {
+          "id": "rcs_n24_d16_s20263662",
+          "n": 24,
+          "depth": 16,
+          "job_id": "67ZeaVu7Hqn3IRol",
+          "run_status": "COMPLETED",
+          "wall_min": 2.9489,
+          "cost_usd": 0.0,
+          "xeb": 0.914625
+        },
+        {
+          "id": "rcs_n24_d16_s20263663",
+          "n": 24,
+          "depth": 16,
+          "job_id": "dofjnXQxXul13djk",
+          "run_status": "COMPLETED",
+          "wall_min": 2.9636,
+          "cost_usd": 0.0,
+          "xeb": 0.936385
+        },
+        {
+          "id": "rcs_n26_d4_s20263743",
+          "n": 26,
+          "depth": 4,
+          "job_id": "QKbY9OwxMWVthij8",
+          "run_status": "COMPLETED",
+          "wall_min": 2.3065,
+          "cost_usd": 0.0,
+          "xeb": 1.000619
+        }
+      ],
+      "mean_xeb_holdout": 0.9846966666666667
+    }
+  },
+  "usd": 0,
+  "jobs": 36
+}

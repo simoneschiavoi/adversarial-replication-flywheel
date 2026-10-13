@@ -1,0 +1,7 @@
+{
+  "exp_id": "EXP-005-CANARY06",
+  "kind": "noise_canary",
+  "round_k": 6,
+  "drift_rule": "|mean paired delta| > 2*noise_sd -> drift_flag",
+  "frozen_at": "2026-10-06T17:28:56+00:00"
+}

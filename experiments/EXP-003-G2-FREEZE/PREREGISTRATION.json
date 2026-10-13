@@ -1,0 +1,21 @@
+{
+  "exp_id": "EXP-003-G2-FREEZE",
+  "hypothesis": "A frozen 48-circuit exact-truth suite (post-pivot: peaked endpoint 403-denied, pauli-path window degenerate; 48 local RCS n in {20,24,26} x d in {4,8,12,16} x 4 seeds, split 24/12/12 by seeded permutation) with a physically locked holdout supports an adversarial flywheel whose every accept/reject decision is auditable and holdout-uncontaminated.",
+  "predictions": {
+    "freeze_one_shot": "suite/MANIFEST.json written once with suite_sha256; second freeze attempt refused",
+    "holdout_locked": "suite/holdout readable only via src/holdout_eval.py, exactly once per campaign",
+    "counts": "train 24 / val 12 / holdout 12 over all 48 circuits",
+    "per_cell": "each (n,d) cell has 4 circuits; splits are NOT stratified (pure seeded permutation) — recorded, not enforced",
+    "truth_runtime": "48 exact statevector computations complete locally in under ~60 min (3 workers)"
+  },
+  "acceptance_metric": "mean per-circuit normalized XEB over the 12 val circuits, paired per-circuit vs the incumbent; cost = sum of (queue_time_ms + run_time_ms)/60000 over the val jobs",
+  "score_definition": "xeb_normalized = raw_linear_xeb / (2^n * sum(p_exact^2) - 1); exact sampler -> 1, uniform -> 0; mps.cpu count keys bit-un-reversed (canonical_counts) before scoring",
+  "mutation_space": ["chi_alloc", "permutation", "shots_alloc"],
+  "split_seed": 20261107,
+  "freeze_dispatches_cloud_jobs": 0,
+  "frozen_at": "before any flywheel job",
+  "lineage": {
+    "EXP-002": "PARKED EXTERNAL_ENDPOINT_DENIED (peaked 403)",
+    "EXP-002B": "pauli-path envelope_ok=False, usable_sizes=[], eps_signal=False"
+  }
+}

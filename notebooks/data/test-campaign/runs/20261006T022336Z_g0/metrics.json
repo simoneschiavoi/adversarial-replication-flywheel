@@ -1,0 +1,27 @@
+{
+  "gate": "G0",
+  "utc": "2026-10-06T02:23:36.792254+00:00",
+  "sdk_version": "0.18.12b1",
+  "api_endpoint": "https://app.bluequbit.io/api/v1",
+  "job_id": "1g8svhqUveQX5nBm",
+  "job_name": "g0-smoke-ghz",
+  "device": "cpu",
+  "run_status": "COMPLETED",
+  "job_id_round_trip_ok": true,
+  "wall_clock_submit_to_result_s": 1.084,
+  "queue_time_ms": 125,
+  "run_time_ms": 1,
+  "estimated_runtime_ms": 100,
+  "estimated_cost_usd": 0.0,
+  "billed_cost_usd": 0.0,
+  "shots": 512,
+  "num_qubits": 4,
+  "top_counts": {
+    "0000": 268,
+    "1111": 244
+  },
+  "ghz_probability_mass": 1.0,
+  "device_options": {},
+  "run_results": null,
+  "G0_PASS": true
+}

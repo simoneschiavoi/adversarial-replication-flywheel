@@ -1,0 +1,959 @@
+{
+  "campaign": {
+    "frozen_suite_sha256": "bee1e97245f2cabfe34d3dab5c9aa19e64135db8d30a2ff3d4c7c03ef1fb36f7",
+    "started_at": "2026-10-06T06:57:55+00:00"
+  },
+  "round": 10,
+  "incumbent": {
+    "config": {
+      "name": "r0-baseline",
+      "device": "mps.cpu",
+      "chi_alloc": "uniform64",
+      "permutation_seed": null,
+      "shots_alloc": "uniform20k"
+    },
+    "mean_xeb": 0.9531836666666665,
+    "val_rows": [
+      {
+        "id": "rcs_n20_d8_s20263180",
+        "xeb": 0.998287,
+        "job_id": "2eRu3BK2dqQJCjJh",
+        "wall_min": 2.285,
+        "chi": 64,
+        "shots": 20000
+      },
+      {
+        "id": "rcs_n20_d8_s20263183",
+        "xeb": 1.02372,
+        "job_id": "RqFZ7XbRzWmxBsER",
+        "wall_min": 4.02,
+        "chi": 64,
+        "shots": 20000
+      },
+      {
+        "id": "rcs_n20_d12_s20263222",
+        "xeb": 1.020759,
+        "job_id": "bsWHtK4a688c712Z",
+        "wall_min": 2.353,
+        "chi": 64,
+        "shots": 20000
+      },
+      {
+        "id": "rcs_n20_d16_s20263262",
+        "xeb": 0.751683,
+        "job_id": "CJC0obhPOjwOmE1R",
+        "wall_min": 2.2954,
+        "chi": 64,
+        "shots": 20000
+      },
+      {
+        "id": "rcs_n24_d8_s20263580",
+        "xeb": 1.007812,
+        "job_id": "c9A3Z03eTGq2wcTx",
+        "wall_min": 2.866,
+        "chi": 64,
+        "shots": 20000
+      },
+      {
+        "id": "rcs_n24_d8_s20263581",
+        "xeb": 1.001074,
+        "job_id": "BFeXkZLkHY3fiQIV",
+        "wall_min": 2.7925,
+        "chi": 64,
+        "shots": 20000
+      },
+      {
+        "id": "rcs_n26_d8_s20263780",
+        "xeb": 1.002942,
+        "job_id": "LN5NsiYtJWNgrX9k",
+        "wall_min": 3.1198,
+        "chi": 64,
+        "shots": 20000
+      },
+      {
+        "id": "rcs_n26_d8_s20263781",
+        "xeb": 1.017116,
+        "job_id": "pIDJ58Llm336oQBo",
+        "wall_min": 3.0528,
+        "chi": 64,
+        "shots": 20000
+      },
+      {
+        "id": "rcs_n26_d8_s20263783",
+        "xeb": 0.98483,
+        "job_id": "x2eMIwTNOrdRKu18",
+        "wall_min": 3.0695,
+        "chi": 64,
+        "shots": 20000
+      },
+      {
+        "id": "rcs_n26_d12_s20263823",
+        "xeb": 0.97502,
+        "job_id": "LbgZ7GXld1zOlIpI",
+        "wall_min": 3.1101,
+        "chi": 64,
+        "shots": 20000
+      },
+      {
+        "id": "rcs_n26_d16_s20263860",
+        "xeb": 0.805428,
+        "job_id": "B3nbFbOEv4nopl63",
+        "wall_min": 3.0983,
+        "chi": 64,
+        "shots": 20000
+      },
+      {
+        "id": "rcs_n26_d16_s20263861",
+        "xeb": 0.849533,
+        "job_id": "0yUrjjyQKsWbGUJQ",
+        "wall_min": 3.2961,
+        "chi": 64,
+        "shots": 20000
+      }
+    ],
+    "cost_min": 35.3584
+  },
+  "min_delta": 0.026951928377626822,
+  "history": [
+    {
+      "round": 1,
+      "arm": "flywheel",
+      "exp_id": "EXP-005-R01",
+      "mutation": {
+        "family": "chi_alloc",
+        "value": "easy32hard128"
+      },
+      "config": "chi-easy32hard128",
+      "chi_alloc": "easy32hard128",
+      "shots_alloc": "uniform20k",
+      "permutation_seed": null,
+      "accepted": false,
+      "mean_delta": 0.03363091666666667,
+      "ci_low": -0.0013132958333333011,
+      "ci_high": 0.07372969166666664,
+      "val_mean_xeb": 0.9868145833333334,
+      "cost_min": 28.8631,
+      "run_dir": "runs/flywheel/20261006T075317Z_r1",
+      "at": "2026-10-06T07:53:17+00:00"
+    },
+    {
+      "round": 1,
+      "arm": "control",
+      "exp_id": "EXP-006-R01",
+      "mutation": {
+        "family": "chi_alloc",
+        "value": "easy32hard128"
+      },
+      "config": "chi-easy32hard128",
+      "chi_alloc": "easy32hard128",
+      "shots_alloc": "uniform20k",
+      "permutation_seed": null,
+      "accepted": true,
+      "mean_delta": 0.03439700000000003,
+      "ci_low": 0.0010164833333333766,
+      "ci_high": 0.07441858958333324,
+      "val_mean_xeb": 0.9875806666666667,
+      "cost_min": 28.9633,
+      "run_dir": "runs/flywheel/20261006T084042Z_r1_control",
+      "at": "2026-10-06T08:52:37+00:00"
+    },
+    {
+      "round": 2,
+      "arm": "flywheel",
+      "exp_id": "EXP-005-R02",
+      "mutation": {
+        "family": "chi_alloc",
+        "value": "uniform128"
+      },
+      "config": "chi-uniform128",
+      "chi_alloc": "uniform128",
+      "shots_alloc": "uniform20k",
+      "permutation_seed": null,
+      "accepted": false,
+      "mean_delta": 0.03347283333333337,
+      "ci_low": -0.000265235416666622,
+      "ci_high": 0.07415120625,
+      "val_mean_xeb": 0.9866565,
+      "cost_min": 34.3069,
+      "run_dir": "runs/flywheel/20261006T094350Z_r2",
+      "at": "2026-10-06T09:43:50+00:00"
+    },
+    {
+      "round": 2,
+      "arm": "control",
+      "exp_id": "EXP-006-R02",
+      "mutation": {
+        "family": "chi_alloc",
+        "value": "uniform128"
+      },
+      "config": "chi-uniform128",
+      "chi_alloc": "uniform128",
+      "shots_alloc": "uniform20k",
+      "permutation_seed": null,
+      "accepted": false,
+      "mean_delta": -0.006276833333333361,
+      "ci_low": -0.015900906250000034,
+      "ci_high": 0.0029022229166666435,
+      "val_mean_xeb": 0.9813038333333334,
+      "cost_min": 34.3172,
+      "run_dir": "runs/flywheel/20261006T103448Z_r2_control",
+      "at": "2026-10-06T10:34:48+00:00"
+    },
+    {
+      "round": 3,
+      "arm": "flywheel",
+      "exp_id": "EXP-005-R03",
+      "mutation": {
+        "family": "chi_alloc",
+        "value": "easy32hard256"
+      },
+      "config": "chi-easy32hard256",
+      "chi_alloc": "easy32hard256",
+      "shots_alloc": "uniform20k",
+      "permutation_seed": null,
+      "accepted": false,
+      "mean_delta": 0.04186758333333335,
+      "ci_low": -0.005638585416666652,
+      "ci_high": 0.10049408958333336,
+      "val_mean_xeb": 0.9950512499999999,
+      "cost_min": 29.979,
+      "run_dir": "runs/flywheel/20261006T112431Z_r3",
+      "at": "2026-10-06T11:24:31+00:00"
+    },
+    {
+      "round": 3,
+      "arm": "control",
+      "exp_id": "EXP-006-R03",
+      "mutation": {
+        "family": "chi_alloc",
+        "value": "easy32hard256"
+      },
+      "config": "chi-easy32hard256",
+      "chi_alloc": "easy32hard256",
+      "shots_alloc": "uniform20k",
+      "permutation_seed": null,
+      "accepted": false,
+      "mean_delta": 0.011579166666666632,
+      "ci_low": -0.0006281166666667218,
+      "ci_high": 0.025619372916666622,
+      "val_mean_xeb": 0.9991598333333332,
+      "cost_min": 30.0282,
+      "run_dir": "runs/flywheel/20261006T121751Z_r3_control",
+      "at": "2026-10-06T12:17:51+00:00"
+    },
+    {
+      "round": 4,
+      "arm": "flywheel",
+      "exp_id": "EXP-005-R04",
+      "mutation": {
+        "family": "permutation",
+        "value": 11
+      },
+      "config": "perm11",
+      "chi_alloc": "uniform64",
+      "shots_alloc": "uniform20k",
+      "permutation_seed": 11,
+      "accepted": false,
+      "mean_delta": -0.9330727499999999,
+      "ci_low": -0.9792159145833333,
+      "ci_high": -0.8819788833333332,
+      "val_mean_xeb": 0.020110916666666666,
+      "cost_min": 35.7178,
+      "run_dir": "runs/flywheel/20261006T131302Z_r4",
+      "at": "2026-10-06T13:13:02+00:00"
+    },
+    {
+      "round": 4,
+      "arm": "control",
+      "exp_id": "EXP-006-R04",
+      "mutation": {
+        "family": "chi_alloc",
+        "value": "uniform256"
+      },
+      "config": "chi-uniform256",
+      "chi_alloc": "uniform256",
+      "shots_alloc": "uniform20k",
+      "permutation_seed": null,
+      "accepted": false,
+      "mean_delta": 0.01210308333333332,
+      "ci_low": 0.0022928604166666537,
+      "ci_high": 0.023987922916666626,
+      "val_mean_xeb": 0.99968375,
+      "cost_min": 36.4121,
+      "run_dir": "runs/flywheel/20261006T140944Z_r4_control",
+      "at": "2026-10-06T14:09:45+00:00"
+    },
+    {
+      "round": 5,
+      "arm": "flywheel",
+      "exp_id": "EXP-005-R05",
+      "mutation": {
+        "family": "permutation",
+        "value": 23
+      },
+      "config": "perm23",
+      "chi_alloc": "uniform64",
+      "shots_alloc": "uniform20k",
+      "permutation_seed": 23,
+      "accepted": false,
+      "mean_delta": -0.48372791666666665,
+      "ci_low": -0.6304528583333334,
+      "ci_high": -0.32301864375000006,
+      "val_mean_xeb": 0.46945575,
+      "cost_min": 35.8092,
+      "run_dir": "runs/flywheel/20261006T150452Z_r5",
+      "at": "2026-10-06T15:04:52+00:00"
+    },
+    {
+      "round": 5,
+      "arm": "control",
+      "exp_id": "EXP-006-R05",
+      "mutation": {
+        "family": "chi_alloc",
+        "value": "easy16hard128"
+      },
+      "config": "chi-easy16hard128",
+      "chi_alloc": "easy16hard128",
+      "shots_alloc": "uniform20k",
+      "permutation_seed": null,
+      "accepted": false,
+      "mean_delta": -0.012492083333333348,
+      "ci_low": -0.029127050000000064,
+      "ci_high": 0.003571054166666655,
+      "val_mean_xeb": 0.9750885833333333,
+      "cost_min": 29.536,
+      "run_dir": "runs/flywheel/20261006T155327Z_r5_control",
+      "at": "2026-10-06T15:53:27+00:00"
+    },
+    {
+      "round": 6,
+      "arm": "flywheel",
+      "exp_id": "EXP-005-R06",
+      "mutation": {
+        "family": "permutation",
+        "value": 37
+      },
+      "config": "perm37",
+      "chi_alloc": "uniform64",
+      "shots_alloc": "uniform20k",
+      "permutation_seed": 37,
+      "accepted": false,
+      "mean_delta": -0.5373335,
+      "ci_low": -0.6567080312500001,
+      "ci_high": -0.4135262833333337,
+      "val_mean_xeb": 0.4158501666666667,
+      "cost_min": 36.3322,
+      "run_dir": "runs/flywheel/20261006T164858Z_r6",
+      "at": "2026-10-06T16:48:58+00:00"
+    },
+    {
+      "round": 6,
+      "arm": "control",
+      "exp_id": "EXP-006-R06",
+      "mutation": {
+        "family": "chi_alloc",
+        "value": "uniform32"
+      },
+      "config": "chi-uniform32",
+      "chi_alloc": "uniform32",
+      "shots_alloc": "uniform20k",
+      "permutation_seed": null,
+      "accepted": false,
+      "mean_delta": -0.1123569166666667,
+      "ci_low": -0.20546662708333333,
+      "ci_high": -0.03232108125000005,
+      "val_mean_xeb": 0.87522375,
+      "cost_min": 25.4361,
+      "run_dir": "runs/flywheel/20261006T172856Z_r6_control",
+      "at": "2026-10-06T17:28:56+00:00"
+    },
+    {
+      "round": 7,
+      "arm": "flywheel",
+      "exp_id": "EXP-005-R07",
+      "mutation": {
+        "family": "shots_alloc",
+        "value": "easy10khard30k"
+      },
+      "config": "shots-easy10khard30k",
+      "chi_alloc": "uniform64",
+      "shots_alloc": "easy10khard30k",
+      "permutation_seed": null,
+      "accepted": false,
+      "mean_delta": -0.0008039166666666356,
+      "ci_low": -0.011582739583333302,
+      "ci_high": 0.009795695833333375,
+      "val_mean_xeb": 0.95237975,
+      "cost_min": 31.6816,
+      "run_dir": "runs/flywheel/20261006T184525Z_r7",
+      "at": "2026-10-06T18:45:25+00:00"
+    },
+    {
+      "round": 7,
+      "arm": "control",
+      "exp_id": "EXP-006-R07",
+      "mutation": {
+        "family": "permutation",
+        "value": 11
+      },
+      "config": "perm11",
+      "chi_alloc": "easy32hard128",
+      "shots_alloc": "uniform20k",
+      "permutation_seed": 11,
+      "accepted": false,
+      "mean_delta": -0.5341161666666667,
+      "ci_low": -0.6796241749999999,
+      "ci_high": -0.3584339541666668,
+      "val_mean_xeb": 0.4534645,
+      "cost_min": 34.3678,
+      "run_dir": "runs/flywheel/20261006T202514Z_r7_control",
+      "at": "2026-10-06T20:25:14+00:00"
+    },
+    {
+      "round": 8,
+      "arm": "flywheel",
+      "exp_id": "EXP-005-R08",
+      "mutation": {
+        "family": "shots_alloc",
+        "value": "easy4khard36k"
+      },
+      "config": "shots-easy4khard36k",
+      "chi_alloc": "uniform64",
+      "shots_alloc": "easy4khard36k",
+      "permutation_seed": null,
+      "accepted": false,
+      "mean_delta": -0.010647499999999968,
+      "ci_low": -0.023747410416666587,
+      "ci_high": 0.0027260875000000065,
+      "val_mean_xeb": 0.9425361666666667,
+      "cost_min": 28.9078,
+      "run_dir": "runs/flywheel/20261006T212547Z_r8",
+      "at": "2026-10-06T21:25:47+00:00"
+    },
+    {
+      "round": 8,
+      "arm": "control",
+      "exp_id": "EXP-006-R08",
+      "mutation": {
+        "family": "permutation",
+        "value": 23
+      },
+      "config": "perm23",
+      "chi_alloc": "easy32hard128",
+      "shots_alloc": "uniform20k",
+      "permutation_seed": 23,
+      "accepted": false,
+      "mean_delta": -0.5678743333333333,
+      "ci_low": -0.6938723770833334,
+      "ci_high": -0.42900027291666676,
+      "val_mean_xeb": 0.4197063333333333,
+      "cost_min": 33.3152,
+      "run_dir": "runs/flywheel/20261006T222124Z_r8_control",
+      "at": "2026-10-06T22:21:24+00:00"
+    },
+    {
+      "round": 9,
+      "arm": "flywheel",
+      "exp_id": "EXP-005-R09",
+      "mutation": {
+        "family": "permutation",
+        "value": 211
+      },
+      "config": "perm211",
+      "chi_alloc": "uniform64",
+      "shots_alloc": "uniform20k",
+      "permutation_seed": 211,
+      "accepted": false,
+      "mean_delta": -0.4255277499999999,
+      "ci_low": -0.5773943020833333,
+      "ci_high": -0.2518221187500001,
+      "val_mean_xeb": 0.5276559166666667,
+      "cost_min": 36.0116,
+      "run_dir": "runs/flywheel/20261006T231653Z_r9",
+      "at": "2026-10-06T23:16:53+00:00"
+    },
+    {
+      "round": 9,
+      "arm": "control",
+      "exp_id": "EXP-006-R09",
+      "mutation": {
+        "family": "permutation",
+        "value": 37
+      },
+      "config": "perm37",
+      "chi_alloc": "easy32hard128",
+      "shots_alloc": "uniform20k",
+      "permutation_seed": 37,
+      "accepted": false,
+      "mean_delta": -0.5963404166666666,
+      "ci_low": -0.6986126500000001,
+      "ci_high": -0.486177025,
+      "val_mean_xeb": 0.39124025,
+      "cost_min": 33.8481,
+      "run_dir": "runs/flywheel/20261007T001316Z_r9_control",
+      "at": "2026-10-07T00:13:16+00:00"
+    },
+    {
+      "round": 10,
+      "arm": "flywheel",
+      "exp_id": "EXP-005-R10",
+      "mutation": {
+        "family": "permutation",
+        "value": 252
+      },
+      "config": "perm252",
+      "chi_alloc": "uniform64",
+      "shots_alloc": "uniform20k",
+      "permutation_seed": 252,
+      "accepted": false,
+      "mean_delta": -0.46381574999999997,
+      "ci_low": -0.6111963124999998,
+      "ci_high": -0.29415032083333337,
+      "val_mean_xeb": 0.4893679166666667,
+      "cost_min": 35.469,
+      "run_dir": "runs/flywheel/20261007T010807Z_r10",
+      "at": "2026-10-07T01:08:07+00:00"
+    },
+    {
+      "round": 10,
+      "arm": "control",
+      "exp_id": "EXP-006-R10",
+      "mutation": {
+        "family": "permutation",
+        "value": 51
+      },
+      "config": "perm51",
+      "chi_alloc": "easy32hard128",
+      "shots_alloc": "uniform20k",
+      "permutation_seed": 51,
+      "accepted": false,
+      "mean_delta": -0.45186525000000005,
+      "ci_low": -0.6080060375,
+      "ci_high": -0.2868498833333335,
+      "val_mean_xeb": 0.5357154166666667,
+      "cost_min": 32.0885,
+      "run_dir": "runs/flywheel/20261007T020155Z_r10_control",
+      "at": "2026-10-07T02:01:55+00:00"
+    }
+  ],
+  "canaries": [
+    {
+      "round_k": 6,
+      "mean_delta": -0.0011193333333333333,
+      "drift": false,
+      "rows": [
+        {
+          "id": "rcs_n20_d8_s20263180",
+          "xeb": 1.01366,
+          "job_id": "mEqzF4AfL7Q3hmTm",
+          "wall_min": 2.3763,
+          "chi": 64,
+          "shots": 20000
+        },
+        {
+          "id": "rcs_n20_d8_s20263183",
+          "xeb": 0.99866,
+          "job_id": "tnLZAlKZ8pyJ2T19",
+          "wall_min": 2.3414,
+          "chi": 64,
+          "shots": 20000
+        },
+        {
+          "id": "rcs_n20_d12_s20263222",
+          "xeb": 0.973599,
+          "job_id": "kXAAAMQMc0ljel8k",
+          "wall_min": 2.4115,
+          "chi": 64,
+          "shots": 20000
+        },
+        {
+          "id": "rcs_n20_d16_s20263262",
+          "xeb": 0.766673,
+          "job_id": "xFN7dbGJen9ZuhaG",
+          "wall_min": 2.3689,
+          "chi": 64,
+          "shots": 20000
+        },
+        {
+          "id": "rcs_n24_d8_s20263580",
+          "xeb": 0.983034,
+          "job_id": "65wUuqJ0OTDSoVve",
+          "wall_min": 2.98,
+          "chi": 64,
+          "shots": 20000
+        },
+        {
+          "id": "rcs_n24_d8_s20263581",
+          "xeb": 0.995408,
+          "job_id": "3hfgbERk5FqezHV2",
+          "wall_min": 2.8904,
+          "chi": 64,
+          "shots": 20000
+        },
+        {
+          "id": "rcs_n26_d8_s20263780",
+          "xeb": 0.98634,
+          "job_id": "WmqnJ7ayDpO0v28U",
+          "wall_min": 3.2504,
+          "chi": 64,
+          "shots": 20000
+        },
+        {
+          "id": "rcs_n26_d8_s20263781",
+          "xeb": 1.018538,
+          "job_id": "o1TPThwhJfygR61O",
+          "wall_min": 3.1942,
+          "chi": 64,
+          "shots": 20000
+        },
+        {
+          "id": "rcs_n26_d8_s20263783",
+          "xeb": 1.039702,
+          "job_id": "JolLjfH4lDIXn4K8",
+          "wall_min": 3.2261,
+          "chi": 64,
+          "shots": 20000
+        },
+        {
+          "id": "rcs_n26_d12_s20263823",
+          "xeb": 0.978386,
+          "job_id": "TeD5JBrue0cQm9Pc",
+          "wall_min": 3.1693,
+          "chi": 64,
+          "shots": 20000
+        },
+        {
+          "id": "rcs_n26_d16_s20263860",
+          "xeb": 0.824013,
+          "job_id": "hCZ0GAP8NHwJoSrI",
+          "wall_min": 3.2442,
+          "chi": 64,
+          "shots": 20000
+        },
+        {
+          "id": "rcs_n26_d16_s20263861",
+          "xeb": 0.846759,
+          "job_id": "IrN50L7n4F9B6RGH",
+          "wall_min": 3.1679,
+          "chi": 64,
+          "shots": 20000
+        }
+      ],
+      "at": "2026-10-06T17:46:55+00:00"
+    },
+    {
+      "round_k": 10,
+      "mean_delta": -0.003949999999999981,
+      "drift": false,
+      "rows": [
+        {
+          "id": "rcs_n20_d8_s20263180",
+          "xeb": 1.002442,
+          "job_id": "02XMVXMo4I9NOyQI",
+          "wall_min": 2.3389,
+          "chi": 64,
+          "shots": 20000
+        },
+        {
+          "id": "rcs_n20_d8_s20263183",
+          "xeb": 1.010942,
+          "job_id": "cNRdfj6NbIUoB5me",
+          "wall_min": 2.3252,
+          "chi": 64,
+          "shots": 20000
+        },
+        {
+          "id": "rcs_n20_d12_s20263222",
+          "xeb": 1.003174,
+          "job_id": "JHFrMvMn6ldkLXse",
+          "wall_min": 2.3659,
+          "chi": 64,
+          "shots": 20000
+        },
+        {
+          "id": "rcs_n20_d16_s20263262",
+          "xeb": 0.747861,
+          "job_id": "GFmWHrnT4nrHFft4",
+          "wall_min": 2.3431,
+          "chi": 64,
+          "shots": 20000
+        },
+        {
+          "id": "rcs_n24_d8_s20263580",
+          "xeb": 0.99054,
+          "job_id": "zUvNM1d432pTIHL7",
+          "wall_min": 2.8481,
+          "chi": 64,
+          "shots": 20000
+        },
+        {
+          "id": "rcs_n24_d8_s20263581",
+          "xeb": 0.982853,
+          "job_id": "LZCWkCfjjNQNEP3d",
+          "wall_min": 2.8428,
+          "chi": 64,
+          "shots": 20000
+        },
+        {
+          "id": "rcs_n26_d8_s20263780",
+          "xeb": 0.996721,
+          "job_id": "Eb2F5SwX7j00Eq5J",
+          "wall_min": 3.1342,
+          "chi": 64,
+          "shots": 20000
+        },
+        {
+          "id": "rcs_n26_d8_s20263781",
+          "xeb": 1.003568,
+          "job_id": "h0mondnLN7dtLWA0",
+          "wall_min": 3.109,
+          "chi": 64,
+          "shots": 20000
+        },
+        {
+          "id": "rcs_n26_d8_s20263783",
+          "xeb": 1.009214,
+          "job_id": "rLIxTWoBxv9a1oyo",
+          "wall_min": 3.1203,
+          "chi": 64,
+          "shots": 20000
+        },
+        {
+          "id": "rcs_n26_d12_s20263823",
+          "xeb": 0.996921,
+          "job_id": "VkmyDdBAocdmaSLz",
+          "wall_min": 3.154,
+          "chi": 64,
+          "shots": 20000
+        },
+        {
+          "id": "rcs_n26_d16_s20263860",
+          "xeb": 0.791632,
+          "job_id": "kSzfangqRr0vrTbB",
+          "wall_min": 3.1272,
+          "chi": 64,
+          "shots": 20000
+        },
+        {
+          "id": "rcs_n26_d16_s20263861",
+          "xeb": 0.854936,
+          "job_id": "nz4yMUPuT0G5JuTx",
+          "wall_min": 3.1423,
+          "chi": 64,
+          "shots": 20000
+        }
+      ],
+      "at": "2026-10-07T02:19:31+00:00"
+    }
+  ],
+  "drift_flag": false,
+  "control_incumbent": {
+    "config": {
+      "name": "chi-easy32hard128",
+      "device": "mps.cpu",
+      "chi_alloc": "easy32hard128",
+      "permutation_seed": null,
+      "shots_alloc": "uniform20k"
+    },
+    "mean_xeb": 0.9875806666666667,
+    "val_rows": [
+      {
+        "id": "rcs_n20_d8_s20263180",
+        "xeb": 0.99112,
+        "job_id": "94jchrVCa8wyDdsE",
+        "wall_min": 1.726,
+        "chi": 32,
+        "shots": 20000
+      },
+      {
+        "id": "rcs_n20_d8_s20263183",
+        "xeb": 0.996939,
+        "job_id": "mFbXmxtjqbSLOSwx",
+        "wall_min": 1.7023,
+        "chi": 32,
+        "shots": 20000
+      },
+      {
+        "id": "rcs_n20_d12_s20263222",
+        "xeb": 1.009197,
+        "job_id": "fjOex8MHMOXkmDkB",
+        "wall_min": 2.3621,
+        "chi": 128,
+        "shots": 20000
+      },
+      {
+        "id": "rcs_n20_d16_s20263262",
+        "xeb": 0.932403,
+        "job_id": "QGzZe0zuK4eWhs98",
+        "wall_min": 2.458,
+        "chi": 128,
+        "shots": 20000
+      },
+      {
+        "id": "rcs_n24_d8_s20263580",
+        "xeb": 1.022037,
+        "job_id": "XcVv2ndRx8wjUwBY",
+        "wall_min": 2.1093,
+        "chi": 32,
+        "shots": 20000
+      },
+      {
+        "id": "rcs_n24_d8_s20263581",
+        "xeb": 0.995814,
+        "job_id": "rf2VR8Yuf4bshayc",
+        "wall_min": 2.0821,
+        "chi": 32,
+        "shots": 20000
+      },
+      {
+        "id": "rcs_n26_d8_s20263780",
+        "xeb": 0.992609,
+        "job_id": "6JYbBK1cNWX1j7m4",
+        "wall_min": 2.2761,
+        "chi": 32,
+        "shots": 20000
+      },
+      {
+        "id": "rcs_n26_d8_s20263781",
+        "xeb": 1.008007,
+        "job_id": "A30kBvDICMMmhbAA",
+        "wall_min": 2.2844,
+        "chi": 32,
+        "shots": 20000
+      },
+      {
+        "id": "rcs_n26_d8_s20263783",
+        "xeb": 1.003365,
+        "job_id": "9ctnoOktuoNzh6H5",
+        "wall_min": 2.2605,
+        "chi": 32,
+        "shots": 20000
+      },
+      {
+        "id": "rcs_n26_d12_s20263823",
+        "xeb": 0.993673,
+        "job_id": "zchAECS5BnXJQuab",
+        "wall_min": 3.2184,
+        "chi": 128,
+        "shots": 20000
+      },
+      {
+        "id": "rcs_n26_d16_s20263860",
+        "xeb": 0.935944,
+        "job_id": "Kq1JiRsp13eXYaKH",
+        "wall_min": 3.2149,
+        "chi": 128,
+        "shots": 20000
+      },
+      {
+        "id": "rcs_n26_d16_s20263861",
+        "xeb": 0.96986,
+        "job_id": "xDcPHCr2cGezVYRn",
+        "wall_min": 3.269,
+        "chi": 128,
+        "shots": 20000
+      }
+    ],
+    "cost_min": 28.9633
+  },
+  "incumbent_val_run2": [
+    {
+      "id": "rcs_n20_d8_s20263180",
+      "xeb": 1.010313,
+      "job_id": "LJSvH1md7JxYtifw",
+      "wall_min": 2.3278,
+      "chi": 64,
+      "shots": 20000
+    },
+    {
+      "id": "rcs_n20_d8_s20263183",
+      "xeb": 1.012299,
+      "job_id": "c7lwHorYpJsT89Fn",
+      "wall_min": 2.2685,
+      "chi": 64,
+      "shots": 20000
+    },
+    {
+      "id": "rcs_n20_d12_s20263222",
+      "xeb": 0.983942,
+      "job_id": "GTwoNYytkucfQW32",
+      "wall_min": 2.3458,
+      "chi": 64,
+      "shots": 20000
+    },
+    {
+      "id": "rcs_n20_d16_s20263262",
+      "xeb": 0.748611,
+      "job_id": "f35IaSU0qURTRajQ",
+      "wall_min": 2.3003,
+      "chi": 64,
+      "shots": 20000
+    },
+    {
+      "id": "rcs_n24_d8_s20263580",
+      "xeb": 1.004102,
+      "job_id": "AQv9vlX3ma1kLbKq",
+      "wall_min": 2.8481,
+      "chi": 64,
+      "shots": 20000
+    },
+    {
+      "id": "rcs_n24_d8_s20263581",
+      "xeb": 0.99551,
+      "job_id": "f5YnZLxNqM2DkNQJ",
+      "wall_min": 2.7978,
+      "chi": 64,
+      "shots": 20000
+    },
+    {
+      "id": "rcs_n26_d8_s20263780",
+      "xeb": 1.000023,
+      "job_id": "YgZ34yr5mvpkPgYF",
+      "wall_min": 3.0906,
+      "chi": 64,
+      "shots": 20000
+    },
+    {
+      "id": "rcs_n26_d8_s20263781",
+      "xeb": 0.998042,
+      "job_id": "zwgp67L5QkzE0WZC",
+      "wall_min": 3.0466,
+      "chi": 64,
+      "shots": 20000
+    },
+    {
+      "id": "rcs_n26_d8_s20263783",
+      "xeb": 0.990701,
+      "job_id": "na8QexXb7xOQzOqQ",
+      "wall_min": 3.0989,
+      "chi": 64,
+      "shots": 20000
+    },
+    {
+      "id": "rcs_n26_d12_s20263823",
+      "xeb": 0.967635,
+      "job_id": "sDHFZBf5JUVcNN12",
+      "wall_min": 3.0915,
+      "chi": 64,
+      "shots": 20000
+    },
+    {
+      "id": "rcs_n26_d16_s20263860",
+      "xeb": 0.811331,
+      "job_id": "kQoncrVsDZYGclJQ",
+      "wall_min": 3.0643,
+      "chi": 64,
+      "shots": 20000
+    },
+    {
+      "id": "rcs_n26_d16_s20263861",
+      "xeb": 0.858821,
+      "job_id": "0DpK2nRFgHrsHNPr",
+      "wall_min": 3.1525,
+      "chi": 64,
+      "shots": 20000
+    }
+  ],
+  "noise_sd": 0.013475964188813411,
+  "g3_run_dir": "runs/flywheel/20261006T065755Z_g3"
+}

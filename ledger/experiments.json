@@ -1,0 +1,802 @@
+{
+  "experiments": {
+    "EXP-002-G15-FEASIBILITY": {
+      "exp_id": "EXP-002-G15-FEASIBILITY",
+      "state": "RECORDED",
+      "registered_at": "2026-10-11T07:03:59+00:00",
+      "spec_path": "experiments/EXP-002-G15-FEASIBILITY/SPEC.md",
+      "spec_sha256": "8581d65641b26e20aa4594391860236fccfc9bf4ca13e5cd69f5353030f44949",
+      "preregistration_sha256": "7c8848e4a7bbfa722b31671bdbbf7b0b537545975dae7d7046b888b56a744adc",
+      "gates": {
+        "jobs_max": 20.0,
+        "usd_max": 0.5
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-11T07:09:31+00:00",
+          "run_dir": "runs/20261011T070931Z_g15reprobe",
+          "metrics_sha256": "02f023e64547088bdd53301a8ea9d79348749e54ee6f1edaf63a796fd28e77e2"
+        }
+      ],
+      "decisions": [],
+      "last_metrics_view": {
+        "usd": "<ABSENT>",
+        "jobs": "<ABSENT>"
+      }
+    },
+    "EXP-009-PROD-KEY-SMOKE": {
+      "exp_id": "EXP-009-PROD-KEY-SMOKE",
+      "state": "REGISTERED",
+      "registered_at": "2026-10-11T07:10:15+00:00",
+      "spec_path": "experiments/EXP-009-PROD-KEY-SMOKE/SPEC.md",
+      "spec_sha256": "721d2e0e44ef19761162c0ab98224fc18f308d983904d818d0d2eedc1b060e11",
+      "preregistration_sha256": "89e1babb22dfff9f3fb70c7e41d9c118b05769e0ea2edec7d68dee160b21fb01",
+      "gates": {
+        "jobs_max": 5.0,
+        "usd_max": 0.0
+      },
+      "attempts": [],
+      "decisions": []
+    },
+    "EXP-003-G2-FREEZE": {
+      "exp_id": "EXP-003-G2-FREEZE",
+      "state": "RECORDED",
+      "registered_at": "2026-10-11T17:29:37+00:00",
+      "spec_path": "experiments/EXP-003-G2-FREEZE/SPEC.md",
+      "spec_sha256": "e8aeaae3862580416ef40c3d5f01f7d9763f9e2ff82c93c2ab2e833eb093e2f0",
+      "preregistration_sha256": "adba89e775b073c8b855d1a16ed318584a6499eed284bcc5fb96e7f89afd8e68",
+      "gates": {
+        "jobs_max": 1.0,
+        "usd_max": 0.0
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-11T17:29:37+00:00",
+          "run_dir": "runs/20261011T172935Z_g2",
+          "metrics_sha256": "3074810f729c41c7408f285df6923db37d5eed6379ec83c311ae29749394d957"
+        }
+      ],
+      "decisions": [],
+      "last_metrics_view": {
+        "usd": 0.0,
+        "jobs": 0
+      }
+    },
+    "EXP-004-G3-BASELINE": {
+      "exp_id": "EXP-004-G3-BASELINE",
+      "state": "RECORDED",
+      "registered_at": "2026-10-11T17:34:56+00:00",
+      "spec_path": "experiments/EXP-004-G3-BASELINE/SPEC.md",
+      "spec_sha256": "e25f5a733654e236085bd551ea8605cbceba4b145c6fb82286fd5eefb48516a4",
+      "preregistration_sha256": "1cb0b8a379486f396efe303cfbcfdc4fef042199e183b1ab3ac032adf1c4d3ce",
+      "gates": {
+        "jobs_max": 90.0,
+        "usd_max": 0.5
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-11T19:33:14+00:00",
+          "run_dir": "runs/flywheel/20261011T193314Z_g3",
+          "metrics_sha256": "42968d985267a638006362583965b2af8854d2b73efd0200bb8fcc5b1eeccd8e"
+        }
+      ],
+      "decisions": [],
+      "last_metrics_view": {
+        "usd": 0.0,
+        "jobs": 84
+      }
+    },
+    "EXP-005-R01": {
+      "exp_id": "EXP-005-R01",
+      "state": "PROMOTED",
+      "registered_at": "2026-10-11T19:35:35+00:00",
+      "spec_path": "experiments/EXP-005-R01/SPEC.md",
+      "spec_sha256": "cd09143fba1fc0b65f687030115b9a562459f08dfb2451331dabb9808cf70695",
+      "preregistration_sha256": "703f1a3bb69cc8743b2380df37329e57bc55894769d11b08712b2774815ba227",
+      "gates": {
+        "fidelity_min": 0.975818,
+        "score_max": 34.3642,
+        "ci_excludes_null": true,
+        "usd_max": 0.5,
+        "jobs_max": 40.0
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-11T20:24:30+00:00",
+          "run_dir": "runs/flywheel/20261011T202430Z_r1",
+          "metrics_sha256": "920d74fcfb306eedc16848984fd9b42c9bd7feef327ca6b93a3db65b38d0ec2f"
+        }
+      ],
+      "decisions": [
+        {
+          "decision": "PROMOTE",
+          "at": "2026-10-11T20:24:30+00:00",
+          "attempt": 1,
+          "checks": []
+        }
+      ],
+      "last_metrics_view": {
+        "score": 29.009,
+        "fidelity": 0.9883804166666667,
+        "usd": 0.0,
+        "jobs": 36,
+        "ci_excludes_null": true
+      }
+    },
+    "EXP-006-R01": {
+      "exp_id": "EXP-006-R01",
+      "state": "PROMOTED",
+      "registered_at": "2026-10-11T20:24:31+00:00",
+      "spec_path": "experiments/EXP-006-R01/SPEC.md",
+      "spec_sha256": "bcd0b743bc90a7d46982a96e203a09f6954ff3f0f2983a3dad8bc1e9b0b071dc",
+      "preregistration_sha256": "0343c03e8f77401cb77374791b92f4385e46dd0d5d132c7a36a080223df34dc7",
+      "gates": {
+        "fidelity_min": 0.975818,
+        "score_max": 34.3642,
+        "ci_excludes_null": true,
+        "usd_max": 0.5,
+        "jobs_max": 40.0
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-11T21:11:49+00:00",
+          "run_dir": "runs/flywheel/20261011T211149Z_r1_control",
+          "metrics_sha256": "21332dca1779ce465c66dd4d88807c99e69e817343b7553828c26c1bad76844b"
+        }
+      ],
+      "decisions": [
+        {
+          "decision": "PROMOTE",
+          "at": "2026-10-11T21:11:49+00:00",
+          "attempt": 1,
+          "checks": []
+        }
+      ],
+      "last_metrics_view": {
+        "score": 28.7787,
+        "fidelity": 0.9839055833333333,
+        "usd": 0.0,
+        "jobs": 36,
+        "ci_excludes_null": true
+      }
+    },
+    "EXP-005-R02": {
+      "exp_id": "EXP-005-R02",
+      "state": "RECORDED",
+      "registered_at": "2026-10-11T21:11:50+00:00",
+      "spec_path": "experiments/EXP-005-R02/SPEC.md",
+      "spec_sha256": "a1ccbf9a6ec313915b2d6d1f3d5cb192224fc1a4d4a6e4a656f8d356dbbaca24",
+      "preregistration_sha256": "1f4dcb214aaf68d5a8cc8f7814792e753e9d8bdff1df6fd4b3549e12de0d13a6",
+      "gates": {
+        "fidelity_min": 1.013817,
+        "score_max": 29.5892,
+        "ci_excludes_null": true,
+        "usd_max": 0.5,
+        "jobs_max": 40.0
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-11T22:02:35+00:00",
+          "run_dir": "runs/flywheel/20261011T220235Z_r2",
+          "metrics_sha256": "86e2751053da78f39986a9d87dd06bd7d80746218816fcdb9c514464312221e3"
+        }
+      ],
+      "decisions": [],
+      "last_metrics_view": {
+        "score": 34.209,
+        "fidelity": 0.98381675,
+        "usd": 0.0,
+        "jobs": 36,
+        "ci_excludes_null": false
+      }
+    },
+    "EXP-006-R02": {
+      "exp_id": "EXP-006-R02",
+      "state": "RECORDED",
+      "registered_at": "2026-10-11T22:02:35+00:00",
+      "spec_path": "experiments/EXP-006-R02/SPEC.md",
+      "spec_sha256": "f442f8da8d3ca7c198b5e24b3514f9c2a5fe33b3a5e9b6731b90470a8d335552",
+      "preregistration_sha256": "7402bda5fffd6a00364b52f7adbef89b7b0b6f4eb09b0f8f9f0d1587fc8050e2",
+      "gates": {
+        "fidelity_min": 1.009342,
+        "score_max": 29.3543,
+        "ci_excludes_null": true,
+        "usd_max": 0.5,
+        "jobs_max": 40.0
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-11T22:53:14+00:00",
+          "run_dir": "runs/flywheel/20261011T225314Z_r2_control",
+          "metrics_sha256": "5902f65ce4643a8f8bd7c62c571e8d92898169461feac288e654ed474b1917c4"
+        }
+      ],
+      "decisions": [],
+      "last_metrics_view": {
+        "score": 33.9905,
+        "fidelity": 0.9870238333333333,
+        "usd": 0.0,
+        "jobs": 36,
+        "ci_excludes_null": false
+      }
+    },
+    "EXP-005-R03": {
+      "exp_id": "EXP-005-R03",
+      "state": "RECORDED",
+      "registered_at": "2026-10-11T22:53:14+00:00",
+      "spec_path": "experiments/EXP-005-R03/SPEC.md",
+      "spec_sha256": "5db82e94889c73edd93c0d4ca8cbb01986c49b5ef824895b84847d8c31431561",
+      "preregistration_sha256": "8b04bbe80015c22d3494d67c53e3998846e73623cc639262936c6347628b7f96",
+      "gates": {
+        "fidelity_min": 1.013817,
+        "score_max": 29.5892,
+        "ci_excludes_null": true,
+        "usd_max": 0.5,
+        "jobs_max": 40.0
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-11T23:42:21+00:00",
+          "run_dir": "runs/flywheel/20261011T234221Z_r3",
+          "metrics_sha256": "eeaea8de04d1de4123fea34cda22725aa1b09de6d3688c11313f59a39e781880"
+        }
+      ],
+      "decisions": [],
+      "last_metrics_view": {
+        "score": 29.4365,
+        "fidelity": 0.9983156666666667,
+        "usd": 0.0,
+        "jobs": 36,
+        "ci_excludes_null": false
+      }
+    },
+    "EXP-006-R03": {
+      "exp_id": "EXP-006-R03",
+      "state": "RECORDED",
+      "registered_at": "2026-10-11T23:42:22+00:00",
+      "spec_path": "experiments/EXP-006-R03/SPEC.md",
+      "spec_sha256": "2c1bc2e20bbf38338ba12c6cb8c61a39b8de2a9fc194574413375010853b384b",
+      "preregistration_sha256": "1af379805c91c7759176adf54a17b3551848150037fdd53056c98a49ea5d9ff4",
+      "gates": {
+        "fidelity_min": 1.009342,
+        "score_max": 29.3543,
+        "ci_excludes_null": true,
+        "usd_max": 0.5,
+        "jobs_max": 40.0
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-12T00:32:08+00:00",
+          "run_dir": "runs/flywheel/20261012T003208Z_r3_control",
+          "metrics_sha256": "49af7441d44e9f92cd307871f05c10a3e7b7808b675b7883f280e1170957607c"
+        }
+      ],
+      "decisions": [],
+      "last_metrics_view": {
+        "score": 29.9522,
+        "fidelity": 1.0030175,
+        "usd": 0.0,
+        "jobs": 36,
+        "ci_excludes_null": true
+      }
+    },
+    "EXP-005-R04": {
+      "exp_id": "EXP-005-R04",
+      "state": "RECORDED",
+      "registered_at": "2026-10-12T00:32:08+00:00",
+      "spec_path": "experiments/EXP-005-R04/SPEC.md",
+      "spec_sha256": "6f0ef6fe5d545f3abaf61816fb3893fd41d6f2bbfb98c26236c981510e6f7048",
+      "preregistration_sha256": "9b3662a67deb9f09b8c0f19da84b07afc8036d5b91520c1f5bd63b0789efc3bd",
+      "gates": {
+        "fidelity_min": 1.013817,
+        "score_max": 29.5892,
+        "ci_excludes_null": true,
+        "usd_max": 0.5,
+        "jobs_max": 40.0
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-12T01:26:04+00:00",
+          "run_dir": "runs/flywheel/20261012T012604Z_r4",
+          "metrics_sha256": "ff7b0a3d233169ef87b7103af4cc541ff347f83a1c769591eab7c3a45bb40699"
+        }
+      ],
+      "decisions": [],
+      "last_metrics_view": {
+        "score": 35.6778,
+        "fidelity": 0.99470875,
+        "usd": 0.0,
+        "jobs": 36,
+        "ci_excludes_null": false
+      }
+    },
+    "EXP-006-R04": {
+      "exp_id": "EXP-006-R04",
+      "state": "RECORDED",
+      "registered_at": "2026-10-12T01:26:04+00:00",
+      "spec_path": "experiments/EXP-006-R04/SPEC.md",
+      "spec_sha256": "8436f0272341b2c355a30032fbf532e2981dc3c6050ea89deb3df8a87a2bae37",
+      "preregistration_sha256": "b4d224cca5d85ffc12b20750affa0293cbeb655329a1cdc2470acdbeff3da67f",
+      "gates": {
+        "fidelity_min": 1.009342,
+        "score_max": 29.3543,
+        "ci_excludes_null": true,
+        "usd_max": 0.5,
+        "jobs_max": 40.0
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-12T02:20:01+00:00",
+          "run_dir": "runs/flywheel/20261012T022001Z_r4_control",
+          "metrics_sha256": "45d9118802379807fd893a2d3adebe9a8769ccc23fdc789a3c11f319d284809e"
+        }
+      ],
+      "decisions": [],
+      "last_metrics_view": {
+        "score": 36.2389,
+        "fidelity": 0.9946488333333333,
+        "usd": 0.0,
+        "jobs": 36,
+        "ci_excludes_null": false
+      }
+    },
+    "EXP-005-R05": {
+      "exp_id": "EXP-005-R05",
+      "state": "RECORDED",
+      "registered_at": "2026-10-12T02:20:02+00:00",
+      "spec_path": "experiments/EXP-005-R05/SPEC.md",
+      "spec_sha256": "15eee4172415f5aaf8a1c7338418d92dbfb516c9642e2f589068df47d662e70d",
+      "preregistration_sha256": "4de492fcfb5242048c6fd51743202e949564feb614261d803dcc6e9b5484b94e",
+      "gates": {
+        "fidelity_min": 1.013817,
+        "score_max": 29.5892,
+        "ci_excludes_null": true,
+        "usd_max": 0.5,
+        "jobs_max": 40.0
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-12T03:15:48+00:00",
+          "run_dir": "runs/flywheel/20261012T031548Z_r5",
+          "metrics_sha256": "926dce8bcae574e2158453f8eaef45f3f6f9e22f1ab86f36ce82283868a434a6"
+        }
+      ],
+      "decisions": [],
+      "last_metrics_view": {
+        "score": 33.4028,
+        "fidelity": 0.45108925,
+        "usd": 0.0,
+        "jobs": 36,
+        "ci_excludes_null": false
+      }
+    },
+    "EXP-006-R05": {
+      "exp_id": "EXP-006-R05",
+      "state": "RECORDED",
+      "registered_at": "2026-10-12T03:15:49+00:00",
+      "spec_path": "experiments/EXP-006-R05/SPEC.md",
+      "spec_sha256": "97baf35e95d96d31614b42a2aecf96a4950dce3c61e3db425b8a422a216a2173",
+      "preregistration_sha256": "4acc014a380afa7f97782f28e611d49ee29674d354b376a4374fb62822ce9e7d",
+      "gates": {
+        "fidelity_min": 1.009342,
+        "score_max": 29.3543,
+        "ci_excludes_null": true,
+        "usd_max": 0.5,
+        "jobs_max": 40.0
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-12T04:03:48+00:00",
+          "run_dir": "runs/flywheel/20261012T040348Z_r5_control",
+          "metrics_sha256": "9d0a171ff72cf1fea3ae8d96da6cbb779afca9d93b8847bb1b8f5d4b5da6a3ad"
+        }
+      ],
+      "decisions": [],
+      "last_metrics_view": {
+        "score": 29.0048,
+        "fidelity": 0.97780575,
+        "usd": 0.0,
+        "jobs": 36,
+        "ci_excludes_null": false
+      }
+    },
+    "EXP-005-R06": {
+      "exp_id": "EXP-005-R06",
+      "state": "RECORDED",
+      "registered_at": "2026-10-12T04:03:48+00:00",
+      "spec_path": "experiments/EXP-005-R06/SPEC.md",
+      "spec_sha256": "ebde1856d4d0fe2a295cf6fd99286bda2bfc5e4b699aaabdfef7377f9f3f18e1",
+      "preregistration_sha256": "e17f1a101b80adb4951fbd967a4c0ce0dcb777a6d50d9eeaf82804d2029d348f",
+      "gates": {
+        "fidelity_min": 1.013817,
+        "score_max": 29.5892,
+        "ci_excludes_null": true,
+        "usd_max": 0.5,
+        "jobs_max": 40.0
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-12T04:59:14+00:00",
+          "run_dir": "runs/flywheel/20261012T045914Z_r6",
+          "metrics_sha256": "5252b5c1d226d68e063ed412753677da7fa080e7f2b9affe2a186ca450843ab1"
+        }
+      ],
+      "decisions": [],
+      "last_metrics_view": {
+        "score": 32.978,
+        "fidelity": 0.4109905833333334,
+        "usd": 0.0,
+        "jobs": 36,
+        "ci_excludes_null": false
+      }
+    },
+    "EXP-006-R06": {
+      "exp_id": "EXP-006-R06",
+      "state": "RECORDED",
+      "registered_at": "2026-10-12T04:59:15+00:00",
+      "spec_path": "experiments/EXP-006-R06/SPEC.md",
+      "spec_sha256": "aaca6d89bfe127722252619c6a1e37e938d6089e30fa96426bf6b3c2de448841",
+      "preregistration_sha256": "5b22ce4b7900ad51075ac4c527619ad4c9921cafc04c0fe1a98d56c9e3f238b3",
+      "gates": {
+        "fidelity_min": 1.009342,
+        "score_max": 29.3543,
+        "ci_excludes_null": true,
+        "usd_max": 0.5,
+        "jobs_max": 40.0
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-12T05:38:42+00:00",
+          "run_dir": "runs/flywheel/20261012T053842Z_r6_control",
+          "metrics_sha256": "a4f43cb0bb9d703155fe8c05a9d6de03fb6feef324546f599d959e234abaded1"
+        }
+      ],
+      "decisions": [],
+      "last_metrics_view": {
+        "score": 25.0163,
+        "fidelity": 0.8722396666666666,
+        "usd": 0.0,
+        "jobs": 36,
+        "ci_excludes_null": false
+      }
+    },
+    "EXP-005-CANARY06": {
+      "exp_id": "EXP-005-CANARY06",
+      "state": "RECORDED",
+      "registered_at": "2026-10-12T05:38:43+00:00",
+      "spec_path": "experiments/EXP-005-CANARY06/SPEC.md",
+      "spec_sha256": "4289b59b3cbacfae0366ed5d671214810be9042c3d917ccd96009fb1c8be4694",
+      "preregistration_sha256": "38f3aecb4021b282821f08bffaac71c639f4acda948aa8339659c49e20a06f93",
+      "gates": {
+        "jobs_max": 14.0,
+        "usd_max": 0.5
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-12T05:54:27+00:00",
+          "run_dir": "runs/flywheel/20261012T055427Z_canary6",
+          "metrics_sha256": "32065a42600d170c39a394bedd1c0b33536df627fbf0dc1fb9ab98451491b3bb"
+        }
+      ],
+      "decisions": [],
+      "last_metrics_view": {
+        "usd": 0.0,
+        "jobs": 12
+      }
+    },
+    "EXP-005-R07": {
+      "exp_id": "EXP-005-R07",
+      "state": "RECORDED",
+      "registered_at": "2026-10-12T05:54:28+00:00",
+      "spec_path": "experiments/EXP-005-R07/SPEC.md",
+      "spec_sha256": "80684c25917688d9ee8403b042b2dacae4f5f0cec3a1ff64ad1fdade90de9d37",
+      "preregistration_sha256": "a9640c0ec93d5d28a1863fc82e15339cd25be3c1cb20477bf152f5edfb0252b5",
+      "gates": {
+        "fidelity_min": 1.013817,
+        "score_max": 29.5892,
+        "ci_excludes_null": true,
+        "usd_max": 0.5,
+        "jobs_max": 40.0
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-12T06:51:16+00:00",
+          "run_dir": "runs/flywheel/20261012T065116Z_r7",
+          "metrics_sha256": "444f998a5262bae04aaf486cf56009e1e9bbbdc57cf631709ddaa9adf54672c4"
+        }
+      ],
+      "decisions": [],
+      "last_metrics_view": {
+        "score": 33.5029,
+        "fidelity": 0.39646233333333325,
+        "usd": 0.0,
+        "jobs": 36,
+        "ci_excludes_null": false
+      }
+    },
+    "EXP-006-R07": {
+      "exp_id": "EXP-006-R07",
+      "state": "RECORDED",
+      "registered_at": "2026-10-12T06:51:17+00:00",
+      "spec_path": "experiments/EXP-006-R07/SPEC.md",
+      "spec_sha256": "8c17764e2dfe44bf41d235e05a8dda0ce39841d386817e7b9adfaaeb0c3af349",
+      "preregistration_sha256": "6ec123a1dc74edbf77ef7a5e6c51c38bf03981e3cb065ed1b8dc39884d53deff",
+      "gates": {
+        "fidelity_min": 1.009342,
+        "score_max": 29.3543,
+        "ci_excludes_null": true,
+        "usd_max": 0.5,
+        "jobs_max": 40.0
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-12T07:47:33+00:00",
+          "run_dir": "runs/flywheel/20261012T074733Z_r7_control",
+          "metrics_sha256": "e9d08fd897be01451463301cb95d01a1ac7562adbc40beeee3e56c8e88fb0b6f"
+        }
+      ],
+      "decisions": [],
+      "last_metrics_view": {
+        "score": 33.7052,
+        "fidelity": 0.4515998333333333,
+        "usd": 0.0,
+        "jobs": 36,
+        "ci_excludes_null": false
+      }
+    },
+    "EXP-005-R08": {
+      "exp_id": "EXP-005-R08",
+      "state": "RECORDED",
+      "registered_at": "2026-10-12T07:47:34+00:00",
+      "spec_path": "experiments/EXP-005-R08/SPEC.md",
+      "spec_sha256": "d0569b7ef9c09287ebc19e6b42b0aae0e20449c086bb0600d01b34727eb880b2",
+      "preregistration_sha256": "ffc9b45a23cb5ddb2ffbc2bf53eebed6258657ac03c530196066f47df89ef983",
+      "gates": {
+        "fidelity_min": 1.013817,
+        "score_max": 29.5892,
+        "ci_excludes_null": true,
+        "usd_max": 0.5,
+        "jobs_max": 40.0
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-12T08:46:06+00:00",
+          "run_dir": "runs/flywheel/20261012T084606Z_r8",
+          "metrics_sha256": "6865147859ed93f90648c6272728bcf6198344d1417ddd88b7fbc0e72904887a"
+        }
+      ],
+      "decisions": [],
+      "last_metrics_view": {
+        "score": 28.9201,
+        "fidelity": 0.9847006666666667,
+        "usd": 0.0,
+        "jobs": 36,
+        "ci_excludes_null": false
+      }
+    },
+    "EXP-006-R08": {
+      "exp_id": "EXP-006-R08",
+      "state": "RECORDED",
+      "registered_at": "2026-10-12T08:46:07+00:00",
+      "spec_path": "experiments/EXP-006-R08/SPEC.md",
+      "spec_sha256": "41ff5c0e4af5cc0ffe013c503aa160434a6df045776b04150327ec37ab268113",
+      "preregistration_sha256": "0d25173f2d96a73cfe1c241c3014890a1960ea337359fbef6f5be41c5855ae09",
+      "gates": {
+        "fidelity_min": 1.009342,
+        "score_max": 29.3543,
+        "ci_excludes_null": true,
+        "usd_max": 0.5,
+        "jobs_max": 40.0
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-12T09:41:47+00:00",
+          "run_dir": "runs/flywheel/20261012T094147Z_r8_control",
+          "metrics_sha256": "24e99a13f2f0c2df948e3a69e5c17aa9c5409ac18074537661dabe23a2c26fbe"
+        }
+      ],
+      "decisions": [],
+      "last_metrics_view": {
+        "score": 33.0163,
+        "fidelity": 0.4173135,
+        "usd": 0.0,
+        "jobs": 36,
+        "ci_excludes_null": false
+      }
+    },
+    "EXP-005-R09": {
+      "exp_id": "EXP-005-R09",
+      "state": "RECORDED",
+      "registered_at": "2026-10-12T09:41:47+00:00",
+      "spec_path": "experiments/EXP-005-R09/SPEC.md",
+      "spec_sha256": "f0139b180c137372440b5e9589bbe388eeaf44f2645253532268621ed55e4be9",
+      "preregistration_sha256": "be37cd9353f55bc898473950dea0990cb98e722f122e1d80ff97f9f124c12a0c",
+      "gates": {
+        "fidelity_min": 1.013817,
+        "score_max": 29.5892,
+        "ci_excludes_null": true,
+        "usd_max": 0.5,
+        "jobs_max": 40.0
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-12T10:42:20+00:00",
+          "run_dir": "runs/flywheel/20261012T104220Z_r9",
+          "metrics_sha256": "28002fb359f9da9d6a1e9c9861ab789ff11c99f7e26c9eeb7915aea5ed59fb52"
+        }
+      ],
+      "decisions": [],
+      "last_metrics_view": {
+        "score": 28.5956,
+        "fidelity": 0.9815753333333334,
+        "usd": 0.0,
+        "jobs": 36,
+        "ci_excludes_null": false
+      }
+    },
+    "EXP-006-R09": {
+      "exp_id": "EXP-006-R09",
+      "state": "RECORDED",
+      "registered_at": "2026-10-12T10:42:21+00:00",
+      "spec_path": "experiments/EXP-006-R09/SPEC.md",
+      "spec_sha256": "7ef22b637c11d6c11b52dd35f60d4246adedf3808ee861448fdd20b75abb8783",
+      "preregistration_sha256": "149adebff1eccfae07765c084a9673cd525ccbd738f1394a766b6115ab1d4878",
+      "gates": {
+        "fidelity_min": 1.009342,
+        "score_max": 29.3543,
+        "ci_excludes_null": true,
+        "usd_max": 0.5,
+        "jobs_max": 40.0
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-12T11:37:59+00:00",
+          "run_dir": "runs/flywheel/20261012T113759Z_r9_control",
+          "metrics_sha256": "fd9a0479de36df947ac6bf4774a5326c63711cd8d2c0fe77151b641177b76e09"
+        }
+      ],
+      "decisions": [],
+      "last_metrics_view": {
+        "score": 33.0391,
+        "fidelity": 0.3956766666666667,
+        "usd": 0.0,
+        "jobs": 36,
+        "ci_excludes_null": false
+      }
+    },
+    "EXP-005-R10": {
+      "exp_id": "EXP-005-R10",
+      "state": "RECORDED",
+      "registered_at": "2026-10-12T11:37:59+00:00",
+      "spec_path": "experiments/EXP-005-R10/SPEC.md",
+      "spec_sha256": "9d1cb2a2cbddb9881a299f760a375a8e11e710298887a3485ea1fb955d00fc8a",
+      "preregistration_sha256": "e659d8ff07eccb0e19c1518640d18370cd2118e89bff3a2db70439739775aa8d",
+      "gates": {
+        "fidelity_min": 1.013817,
+        "score_max": 29.5892,
+        "ci_excludes_null": true,
+        "usd_max": 0.5,
+        "jobs_max": 40.0
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-12T12:34:46+00:00",
+          "run_dir": "runs/flywheel/20261012T123446Z_r10",
+          "metrics_sha256": "070541670cba657bfebcbfba8efd2a6c77a5435fad9e969de94cdefbed76c965"
+        }
+      ],
+      "decisions": [],
+      "last_metrics_view": {
+        "score": 33.4424,
+        "fidelity": 0.47335949999999993,
+        "usd": 0.0,
+        "jobs": 36,
+        "ci_excludes_null": false
+      }
+    },
+    "EXP-006-R10": {
+      "exp_id": "EXP-006-R10",
+      "state": "RECORDED",
+      "registered_at": "2026-10-12T12:34:47+00:00",
+      "spec_path": "experiments/EXP-006-R10/SPEC.md",
+      "spec_sha256": "7a4ee79b6b7108b0b9178c3e10e93fcb66cb0749b303953b53d2555860ab032f",
+      "preregistration_sha256": "ed6f524c4d481eb2c2b3f02bce630639fd6b64f36598d415a61dafbc472c5080",
+      "gates": {
+        "fidelity_min": 1.009342,
+        "score_max": 29.3543,
+        "ci_excludes_null": true,
+        "usd_max": 0.5,
+        "jobs_max": 40.0
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-12T13:27:20+00:00",
+          "run_dir": "runs/flywheel/20261012T132720Z_r10_control",
+          "metrics_sha256": "70396056186add3af6d5221b593de854e3a04277a872a7e91849767ea1204fe1"
+        }
+      ],
+      "decisions": [],
+      "last_metrics_view": {
+        "score": 31.4961,
+        "fidelity": 0.5215863333333333,
+        "usd": 0.0,
+        "jobs": 36,
+        "ci_excludes_null": false
+      }
+    },
+    "EXP-005-CANARY10": {
+      "exp_id": "EXP-005-CANARY10",
+      "state": "RECORDED",
+      "registered_at": "2026-10-12T13:27:21+00:00",
+      "spec_path": "experiments/EXP-005-CANARY10/SPEC.md",
+      "spec_sha256": "cbe86403d04009f76b2070ccf5e79ed8b6d3d4913cc0e26965d210537c955ba6",
+      "preregistration_sha256": "3d21b6b4621d1d8c39cd0e97c12c4a92ff8eef516ec3a811adf4dcb7884520b7",
+      "gates": {
+        "jobs_max": 14.0,
+        "usd_max": 0.5
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-12T13:43:02+00:00",
+          "run_dir": "runs/flywheel/20261012T134302Z_canary10",
+          "metrics_sha256": "41bd26305ae37a79c1a4f74bc9b9be9ed760a0872ce5d2b231bbe3c0ec672c62"
+        }
+      ],
+      "decisions": [],
+      "last_metrics_view": {
+        "usd": 0.0,
+        "jobs": 12
+      }
+    },
+    "EXP-007-HOLDOUT": {
+      "exp_id": "EXP-007-HOLDOUT",
+      "state": "RECORDED",
+      "registered_at": "2026-10-12T13:55:08+00:00",
+      "spec_path": "experiments/EXP-007-HOLDOUT/SPEC.md",
+      "spec_sha256": "99d4462f9fd499ace0e7506fcfe821afa5f78c5f4fcbadcdf145e880a05306bb",
+      "preregistration_sha256": "971cead876a422f926f6a4a9be336e48c7cc2fb773141a9b8d6e86d5ec589e49",
+      "gates": {
+        "jobs_max": 40.0,
+        "usd_max": 0.5
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_at": "2026-10-12T15:25:58+00:00",
+          "run_dir": "runs/20261012T135508Z_holdout",
+          "metrics_sha256": "09095608b9de6dfa5ea39dcb30a3f8b0711ba2bfac5e3e6b95bb37ecb5a9685d"
+        }
+      ],
+      "decisions": [],
+      "last_metrics_view": {
+        "usd": 0,
+        "jobs": 36
+      }
+    }
+  }
+}
