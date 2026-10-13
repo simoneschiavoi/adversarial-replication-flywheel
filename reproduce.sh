@@ -16,7 +16,12 @@ echo "== 0. environment + scientific core (no jobs) =="
 .venv/bin/python -u src/validate_core.py
 
 echo "== 1. freeze a fresh 48-circuit suite (local compute only, 0 jobs) =="
-.venv/bin/python -u src/freeze_suite.py
+if [ -f suite/MANIFEST.json ]; then
+  echo "   committed frozen suite found — keeping it (exact replication)."
+  echo "   delete suite/MANIFEST.json first for a fresh freeze."
+else
+  .venv/bin/python -u src/freeze_suite.py
+fi
 .venv/bin/python -u src/freeze_suite.py --check
 
 echo "== 2. G3 baseline (val x2 + train + chi sweep; ~84 mps jobs) =="
